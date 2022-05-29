@@ -1,7 +1,37 @@
 import "./appsSection.scss";
+import Apps from "../res/Apps.svg";
+import Noti from "../res/Noti.svg";
+import Bolt from "../res/Bolt.svg";
+import Back from "../res/Back.svg";
 
 function AppsSection() {
-  return <div className="section apps" id="apps" />;
+  return (
+    <div className="section apps" id="apps">
+      <h1 className="apps-header">Apps</h1>
+
+      <img alt="Apps" className="apps" src={Apps} />
+
+      <div className="apps-feature">
+        <div className="apps-feature-cell">
+          <img alt="icon" className="apps-feature-img " src={Back} />
+          <h3 className="apps-feature-header">Background Processing</h3>
+          <caption className="apps-feature-caption">A remarkably convenient algorithm that can run when the app is closed to alert you of stress events such as infection</caption>
+        </div>
+
+        <div className="apps-feature-cell">
+          <img alt="icon" className="apps-feature-img " src={Noti} />
+          <h3 className="apps-feature-header">Notifications</h3>
+          <caption className="apps-feature-caption">Receive stress alerts after the first launch even when not using the app
+          </caption>
+        </div>
+        <div className="apps-feature-cell">
+          <img alt="icon" className="apps-feature-img " src={Bolt} />
+          <h3 className="apps-feature-header">Speedy Processing</h3>
+          <caption className="apps-feature-caption">A super-efficient algorithm to detect infection in real-time</caption>
+        </div>
+      </div>
+    </div>
+  );
 }
 
 export default AppsSection;
