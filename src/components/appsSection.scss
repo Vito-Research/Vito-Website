@@ -1,5 +1,76 @@
 @use "../colors" as *;
 @use "../util";
 
+
 .section.apps {
+    flex-direction: column;
+    background-color: #F2F8FF;
+    color: $text-dark;
+    margin-top: 5%;
+    padding: 2em;
+}
+.apps-text {
+    flex: 1 1 50%;
+   
+    align-self: center;
+    color: $text-dark;
+  }
+  .apps-header {
+    color: $text-dark;
+    
+  }
+  .apps-caption {
+    color: $text-dark-muted;
+    width: 70vw;
+    padding-top: 2em;
+    text-align: left;
+  }
+  
+  sup {
+      color: $text-dark;
+  }
+  img.apps {
+      width: 70vw;
+      
+  }
+  .apps-feature {
+    display: flex;
+    margin-top: 10%;
+    
+  }
+  @media only screen and (max-width: 768px) {
+    .apps-feature {
+        display:block;
+        
+    }
+}
+  .apps-feature-cell {
+    width: 55vw;
+   
+  }
+  .apps-feature-img {
+    width: 3vw;
+    height: 3vw;
+    margin-top: 20%;
+    
+}
+  .apps-feature-header {
+    color: $primary;
+    
+  }
+  .apps-feature-caption {
+    width: 25vw;
+    color: $text-dark-muted;
+    padding-top: 2em;
+    text-align: left;
+    
+  }
+  @media only screen and (max-width: 768px) {
+    .apps-feature-caption {
+        width: 65vw;
+        color: $text-dark-muted;
+        padding-top: 2em;
+        text-align: left;
+        
+      }
 }
