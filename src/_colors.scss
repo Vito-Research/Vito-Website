@@ -4,7 +4,7 @@
 * A partial stylesheet for storing colors used across the website.
 * To use a color from here, write
 *
-*       @use "../colors";
+*       @use "../colors" as *;
 *
 * in your component's stylesheet.
 **/
