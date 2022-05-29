@@ -1,5 +1,18 @@
 @use "../colors" as *;
 
+.landing {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.landing-text {
+  flex: 1 1 50%;
+  padding: 2em;
+  align-self: center;
+}
+
 button.cta {
   color: $primary;
   background-color: white;

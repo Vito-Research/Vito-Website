@@ -4,3 +4,19 @@
 * A utility stylesheet which contains various useful styling functionality.
 *
 **/
+
+div.centerX {
+  display: flex;
+  justify-items: center;
+}
+
+div.centerY {
+  display: flex;
+  align-items: center;
+}
+
+div.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
