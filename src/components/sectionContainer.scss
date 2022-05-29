@@ -1,0 +1,10 @@
+@use "../colors" as *;
+
+.section-container {
+  color: $text-dark !important;
+  background-color: white;
+  border-radius: 50px 0px 0px 0px;
+  margin-left: 2em;
+  padding: 2em;
+  z-index: 1;
+}

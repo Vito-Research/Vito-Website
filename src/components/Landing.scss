@@ -4,16 +4,15 @@
   width: 100%;
   height: 100%;
   display: flex;
+  position: sticky;
+  top: 0;
+  left: 0;
   flex-direction: row;
+  z-index: -1;
 }
 
 .landing-text {
   flex: 1 1 50%;
   padding: 2em;
   align-self: center;
-}
-
-button.cta {
-  color: $primary;
-  background-color: white;
 }
