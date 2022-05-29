@@ -12,7 +12,7 @@ function AboutSection() {
           Vito encourages people to take precautions they deem necessary when
           possibly infected
         </h3>
-        <img src={Info} alt="Info" />
+        <img src={Info} alt="Info" className="info-img" />
       </div>
     </div>
   );

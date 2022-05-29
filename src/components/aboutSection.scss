@@ -2,22 +2,27 @@
 @use "../util";
 
 .section.about {
-    flex-direction: column;
-    background-color: white;
-    color: black;
+  flex-direction: column;
+  background-color: white;
+  color: black;
 }
 .about-text {
-    flex: 1 1 50%;
-    padding: 2em;
-    align-self: center;
-    color: black;
-  }
-  .header {
-    color: black;
-  }
-  .light {
-      opacity: 0.6;
-  }
-  sup {
-      color: black;
-  }
+  flex: 1 1 50%;
+  padding: 2em;
+  align-self: center;
+  color: black;
+}
+.header {
+  color: black;
+}
+.light {
+  opacity: 0.6;
+}
+sup {
+  color: black;
+}
+
+.info-img {
+  max-width: 100%;
+  height: auto;
+}
