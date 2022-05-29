@@ -1,0 +1,30 @@
+/**
+* _colors.scss
+*
+* A partial stylesheet for storing colors used across the website.
+* To use a color from here, write
+*
+*       @use "../colors";
+*
+* in your component's stylesheet.
+**/
+
+// Base colors, for backgrounds
+$primary: #1578ec;
+$secondary: #65cafa;
+
+// Text colors
+$text-primary: #fff;
+$text-muted: #fff8;
+$text-dark: #111;
+$text-dark-muted: #3338;
+
+//Buttons
+$btn-primary: $primary;
+$btn-secondary: $secondary;
+$btn-text: $text-primary;
+
+// Navbar colors
+$nav-primary: $text-primary; // Normal navbar text (inactive links)
+$nav-active: $text-muted; // Active navbar text (active links)
+$nav-btn: $btn-primary; // Navbar action button background color

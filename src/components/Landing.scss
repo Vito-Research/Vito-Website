@@ -1,4 +1,6 @@
+@use "../colors";
+
 button.cta {
-    color: #1578EC;
-    background-color: white;
+  color: $primary;
+  background-color: white;
 }
