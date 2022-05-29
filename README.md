@@ -12,8 +12,10 @@
 
 ## Getting Started
 
-1. Add a new branch or fork
-2. Clone the new branch or fork, open in VSCode or cd via the terminal
-3. Run npm install in the clone directory
-4. Run vite to start the localhost
-
+1. Clone the repository and open in your editor of choice
+2. _**To Run:**_ Run `npm install`, then `npm run dev` to start the dev server
+3. _**To Contribute:**_
+  - Create a new branch for your feature using `git checkout -b [your-branch]`
+  - Once you're done making changes (please test them first) do `npm run lint` to lint your code
+  - After all lint errors have been fixed, push your changes.
+  - Create a pull request for the new feature.
