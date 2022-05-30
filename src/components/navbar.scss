@@ -1,0 +1,78 @@
+@use "../colors" as *;
+
+.navbar {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    position: sticky;
+    top: 0;
+    left: 0;
+    flex-direction: row;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.navbar-text {
+    flex: 1 1 50%;
+    padding: 2em;
+    align-self: center;
+}
+
+ul {
+    list-style-type: none;
+    margin: inherit;
+    padding: 0;
+    overflow: hidden;
+    background-color: transparent;
+}
+
+li {
+    float: right;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    font-size: large;
+    padding: 24px 26px;
+    text-decoration: none;
+}
+
+li2 a {
+    display: block;
+    color: white;
+    text-align: center;
+    font-size: xx-large;
+    padding: 14px 16px;
+    text-decoration: none;
+    float: left;
+}
+
+
+
+li a:hover {
+    background-color: $secondary;
+}
+
+#box1 {
+    background: #101010;
+    border-radius: 25px;
+    margin: 10px;
+    border-radius: 25px;
+    background: #A1D8FD;
+    padding: 2px;
+    width: 190px;
+    height: 40px;
+    float: right;
+}
+
+li3 a {
+    display: block;
+    color: white;
+    text-align: center;
+    font-size: large;
+    padding: 10px 10px;
+    text-decoration: none;
+    float: left;
+}
