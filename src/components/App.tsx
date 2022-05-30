@@ -5,7 +5,7 @@ import SectionContainer from "./SectionContainer";
 
 function App() {
   return (
-    <div className="App">
+    <div className="App" id="App">
       <Landing />
       <SectionContainer />
       <Footer />
