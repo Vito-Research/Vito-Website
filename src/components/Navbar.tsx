@@ -10,7 +10,7 @@ function Navbar() {
 
                 <li className="li2"><a> Vito </a></li>
 
-                   <li><button style={{ margin: "5%" }} type="button" className="btn btn-cta smaller">
+                   <li><button style={{ margin: "5%", width: "20vw"}} type="button" className="btn btn-cta smaller">
         Join The Community
       </button></li>
                 <li className="larger"><a href="bib.html">Algorithm</a></li>
