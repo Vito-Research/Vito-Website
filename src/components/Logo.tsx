@@ -5,7 +5,7 @@ import bird from "../res/bird.svg";
 function Logo() {
   return (
     <div className="logo">
-      <img className="beatAnimation" src={bird} alt="logo" />
+      <img src={bird} alt="logo" />
     </div>
   );
 }
