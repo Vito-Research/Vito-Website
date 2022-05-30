@@ -1,0 +1,16 @@
+.logo {
+  position: absolute;
+  width: 50vw;
+  right: 0;
+  top: 5%;
+  overflow: hidden;
+}
+
+.logo img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.7s ease-out;
+}
+.logo img:hover {
+  transform: scale(1.1);
+}

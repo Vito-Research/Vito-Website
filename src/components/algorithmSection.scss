@@ -1,0 +1,35 @@
+@use "../colors" as *;
+@use "../util";
+
+
+.section.algorithm {
+    flex-direction: column;
+    background-color: #F2F8FF;
+    color: $text-dark;
+    margin-top: 5%;
+    padding: 2em;
+}
+.algorithm-text {
+    flex: 1 1 50%;
+   
+    align-self: center;
+    color: $text-dark;
+  }
+  .algorithm-header {
+    color: $text-dark;
+    
+  }
+  .algorithm-caption {
+    color: $text-dark-muted;
+    width: 70vw;
+    padding-top: 2em;
+    text-align: left;
+  }
+  
+  sup {
+      color: $text-dark;
+  }
+  img.algo {
+      width: 70vw;
+      
+  }

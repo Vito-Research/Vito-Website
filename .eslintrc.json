@@ -23,7 +23,8 @@
       "ignorePackages",
       { "js": "never", "jsx": "never", "ts": "never", "tsx": "never" }
     ],
-    "comma-dangle": ["warn", { "functions": "ignore" }]
+    "comma-dangle": ["warn", { "functions": "ignore" }],
+    "linebreak-style": "off"
   },
   "settings": {
     "import/resolver": {

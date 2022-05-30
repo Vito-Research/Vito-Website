@@ -1,0 +1,20 @@
+/**
+* _font.scss
+*
+* Contains definitions for font sizes and styles.
+*
+* This should not be included by any component stylesheet, and is already included in index.scss.
+*
+**/
+
+@use "./colors" as *;
+
+@import url("https://fonts.googleapis.com/css2?family=Bitter:wght@400;600&family=Nunito:wght@300;400;700;900&display=swap");
+
+* {
+  font-family: "Nunito", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+:root {
+  color: $text-primary;
+}
