@@ -1,10 +1,17 @@
+import Landing from "./Landing";
+import Navbar from "./Navbar";
+import Footer from "./Footer";
 import "./App.scss";
-import Logo from "./Logo";
+import SectionContainer from "./SectionContainer";
 
 function App() {
   return (
-    <div className="App">
-      <Logo />
+    <div className="App" id="App">
+      <Navbar />
+      <Landing />
+      <SectionContainer />
+      <Footer />
+
     </div>
   );
 }

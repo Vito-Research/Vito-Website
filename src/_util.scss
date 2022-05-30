@@ -1,0 +1,50 @@
+/**
+* _util.scss
+*
+* A utility stylesheet which contains various useful styling functionality.
+*
+**/
+
+@use "./colors" as *;
+
+div.centerX {
+  display: flex;
+  justify-items: center;
+}
+
+div.centerY {
+  display: flex;
+  align-items: center;
+}
+
+div.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn {
+  text-align: center;
+  line-height: 100%;
+  vertical-align: middle;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
+  border-radius: 20px;
+  font-size: 1.4em;
+  border-color: rgba($primary, 10%);
+  border-style: solid;
+  cursor: pointer;
+  box-shadow: 2px 2px 10px #0005;
+  transition: background-color 1s ease;
+}
+
+.btn-cta:hover {
+  background-color: darken($btn-cta, 10%);
+}
+
+.btn-cta {
+  background-color: $btn-cta;
+  color: $btn-cta-text;
+}
