@@ -8,15 +8,16 @@ function Navbar() {
         <div className="Navbar" id="Navbar">
             <ul>
 
-                <li2><a ><b>Vito</b></a></li2>
-                <div id="box1">
-                    <li3><a href="bib.html">Join The Community</a></li3>
-                </div>
-                <li><a href="bib.html">Algorithm</a></li>
-                <li><a href="consact.html">Apps</a></li>
-                <li><a href="sharkspecies.html">About</a></li>
-                <li><a className="active" href="index.html">Home</a></li>
+                <li className="li2"><a> Vito </a></li>
 
+                   <li><button style={{ margin: "5%" }} type="button" className="btn btn-cta smaller">
+        Join The Community
+      </button></li>
+                <li className="larger"><a href="bib.html">Algorithm</a></li>
+                <li className="larger"><a href="consact.html">Apps</a></li>
+                <li className="larger"><a href="sharkspecies.html">About</a></li>
+                <li className="larger"><a className="active" href="index.html">Home</a></li>
+             
             </ul>
 
         </div>

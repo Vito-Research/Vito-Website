@@ -22,34 +22,44 @@ ul {
     list-style-type: none;
     margin: inherit;
     padding: 0;
-    overflow: hidden;
+    // overflow: hidden;
     background-color: transparent;
+    margin: 2%;
 }
 
 li {
     float: right;
+
+    
 }
 
 li a {
     display: block;
     color: white;
     text-align: center;
-    font-size: large;
     padding: 24px 26px;
     text-decoration: none;
 }
 
-li2 a {
+.li2 {
     display: block;
     color: white;
-    text-align: center;
+    text-align: left;
+    font-weight: 700;
     font-size: xx-large;
-    padding: 14px 16px;
+
     text-decoration: none;
     float: left;
 }
+.smaller {
+    font-size: smaller;
+    width: 15vw;
+   
+}
+.larger {
+    font-size: larger;
 
-
+}
 
 li a:hover {
     background-color: $secondary;
@@ -67,7 +77,7 @@ li a:hover {
     float: right;
 }
 
-li3 a {
+.li3 {
     display: block;
     color: white;
     text-align: center;
