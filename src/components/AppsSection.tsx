@@ -20,14 +20,14 @@ function AppsSection() {
 
         <div className="apps-feature-cell">
           <img alt="icon" className="apps-feature-img " src={Noti} />
-          <h3 className="apps-feature-header">Notifications</h3>
-          <caption className="apps-feature-caption">Receive stress alerts after the first launch even when not using the app
+          <h3 className="apps-feature-header">Stress Event Notifications</h3>
+          <caption className="apps-feature-caption">Receive stress event notifications after the first launch even when not using the app so you can take take precautions you deem necessary
           </caption>
         </div>
         <div className="apps-feature-cell">
           <img alt="icon" className="apps-feature-img " src={Bolt} />
-          <h3 className="apps-feature-header">Speedy Processing</h3>
-          <caption className="apps-feature-caption">A super-efficient algorithm to detect infection in real-time</caption>
+          <h3 className="apps-feature-header">Speedy Apps</h3>
+          <caption className="apps-feature-caption">A super-efficient algorithm to detect infection in real-time that loads quickly so individuals are more likely to use the app and reduce the spread</caption>
         </div>
       </div>
     </div>

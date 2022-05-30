@@ -33,6 +33,7 @@
       width: 70vw;
       
   }
+ 
   .apps-feature {
     display: flex;
     margin-top: 10%;
@@ -53,6 +54,14 @@
     height: 3vw;
     margin-top: 20%;
     
+}
+@media only screen and (max-width: 768px) {
+  .apps-feature-img {
+    width: 7vw;
+    height: 7vw;
+    margin-top: 20%;
+    
+}
 }
   .apps-feature-header {
     color: $primary;
