@@ -13,9 +13,9 @@
   top: 0;
   left: 0;
   flex-direction: row;
-
+  font-weight: 600;
   color: $nav-primary;
-  padding: 2em;
+  padding: 1em 2em 1em 2em;
 
   a {
     color: inherit;
@@ -35,14 +35,17 @@
 .nav-item {
   text-align: center;
   display: block;
-  flex: 0.2 1 0;
+  flex: 0 1 0;
   font-size: 1.6em;
   min-width: max-content;
-  padding-left: 0.5em;
+  margin-left: 1em;
 }
 
 .nav-btn {
   font-size: 1.1em !important;
+  font-weight: 600 !important;
+  box-shadow: none !important;
+  border: none !important;
 }
 
 .nav-item.active,
@@ -51,7 +54,7 @@
 }
 
 .navbar::before {
-  position: relative;
+  position: absolute;
   top: 100%;
   left: 0;
   width: 100%;
