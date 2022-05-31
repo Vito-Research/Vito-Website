@@ -2,8 +2,9 @@
   position: absolute;
   width: 50vw;
   right: 0;
-  top: 5%;
+  top: 5em;
   overflow: hidden;
+  z-index: 0;
 }
 
 .logo img {

@@ -7,11 +7,13 @@ function Landing() {
   const [landingTextOpacity, setOpacity] = useState(1.0);
 
   useEffect(() => {
-    const app = document.getElementById("App");
-    app?.addEventListener("scroll", () => {
+    window.addEventListener("scroll", () => {
       requestAnimationFrame(() => {
         setOpacity(
-          Math.min(1, Math.max(0, 1 - (2 * app.scrollTop) / app.clientHeight))
+          Math.min(
+            1,
+            Math.max(0, 1 - (2 * window.scrollY) / window.innerHeight)
+          )
         );
       });
     });

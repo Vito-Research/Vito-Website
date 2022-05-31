@@ -6,7 +6,7 @@ function Navbar() {
       <div className="nav-brand">
         <a href="/"> Vito </a>
       </div>
-
+      <div className="nav-gradient" />
       <div className="nav-item">
         <a className="active" href="index.html">
           Home
@@ -22,7 +22,7 @@ function Navbar() {
         <a href="bib.html">Algorithm</a>
       </div>
       <div className="nav-item">
-        <button type="button" className="btn btn-secondary">
+        <button type="button" className="btn btn-secondary nav-btn">
           Join The Community
         </button>
       </div>

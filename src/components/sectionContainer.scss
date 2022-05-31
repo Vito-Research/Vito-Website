@@ -1,6 +1,7 @@
 @use "../colors" as *;
 
 .section-container {
+  position: relative;
   color: $text-dark !important;
   background-color: white;
   border-radius: 50px 0px 0px 0px;
