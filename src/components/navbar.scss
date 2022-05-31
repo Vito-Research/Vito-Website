@@ -1,85 +1,42 @@
 @use "../colors" as *;
+@use "../util";
 
 .navbar {
   width: 100%;
-  height: 100%;
+  height: 4em;
   display: flex;
-  position: sticky;
+  justify-content: right;
+  align-items: center;
+  position: fixed;
   top: 0;
   left: 0;
   flex-direction: row;
-  overflow: hidden;
-  z-index: -1;
-}
 
-.navbar-text {
-  flex: 1 1 50%;
+  color: $nav-primary;
   padding: 2em;
-  align-self: center;
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
 }
 
-ul.nav-list {
-  list-style-type: none;
-  margin: inherit;
-  padding: 0;
-  // overflow: hidden;
-  background-color: transparent;
-  margin: 2%;
-}
-
-li.nav-item {
-  float: right;
-}
-
-li.nav-item {
-  font-size: larger;
-}
-
-li.nav-item a {
+.nav-brand {
   display: block;
-  color: white;
-  text-align: center;
-  padding: 24px 26px;
-  text-decoration: none;
-}
-
-.nav-brand a {
-  display: block;
-  color: white;
-  text-align: left;
+  justify-self: left;
+  flex: 1;
+  margin-right: auto;
+  font-size: 2.2em;
   font-weight: 700;
-  font-size: xx-large;
-  text-decoration: none;
-  padding: 24px 26px;
-  float: left !important;
-}
-.nav-btn {
-  font-size: larger !important;
-  width: 15vw;
 }
 
-li.nav-item a:hover {
-  background-color: $secondary;
-}
-
-#box1 {
-  background: #101010;
-  border-radius: 25px;
-  margin: 10px;
-  border-radius: 25px;
-  background: #a1d8fd;
-  padding: 2px;
-  width: 190px;
-  height: 40px;
-  float: right;
-}
-
-.li3 {
+.nav-item {
   display: block;
-  color: white;
-  text-align: center;
-  font-size: large;
-  padding: 10px 10px;
-  text-decoration: none;
-  float: left;
+  flex: 0.2 1 0;
+  font-size: 1.6em;
+}
+
+.nav-item.active,
+.nav-item:hover {
+  color: $nav-active;
 }

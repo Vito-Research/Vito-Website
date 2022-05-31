@@ -1,36 +1,37 @@
 .section.footer {
-    display: flex;
+  display: flex;
+  background-color: white;
+  color: black;
+  padding: 2em;
+}
+
+@media only screen and (max-width: 768px) {
+  .section.footer {
+    display: block;
     background-color: white;
     color: black;
     padding: 3%;
-}
-
-@media only screen and (max-width: 768px) {
-    .section.footer {
-        display: block;
-        background-color: white;
-        color: black;
-        padding: 3%;
-
-    }
+  }
 }
 .footer-div {
-    margin: 6%;
-    height: 25vh;
+  flex: 1;
+  margin: 6%;
+  height: 25vh;
 }
 .footer-text-space {
-    margin-top: 15%;
-    
+  flex: 1;
+  margin-top: 15%;
 }
 @media only screen and (max-width: 768px) {
-    .footer-div-space {
-        margin: 6%;
-        margin-top: 15%;
-        height: 25vh;
-    }
+  .footer-div-space {
+    margin: 6%;
+    margin-top: 15%;
+    height: 25vh;
+  }
 }
 
 .footer-text {
-    color: black;
-
+  display: block;
+  flex: 1;
+  color: black;
 }

@@ -25,14 +25,13 @@ div.center {
 
 .btn {
   text-align: center;
-  line-height: 100%;
-  vertical-align: middle;
-  padding-left: 0.5em;
-  padding-right: 0.5em;
+  padding-left: 0.6em;
+  padding-right: 0.6em;
   padding-top: 0.2em;
   padding-bottom: 0.2em;
   border-radius: 20px;
   font-size: 1.4em;
+  font-weight: 600;
   border-color: rgba($primary, 10%);
   border-style: solid;
   cursor: pointer;
@@ -47,4 +46,14 @@ div.center {
 .btn-cta {
   background-color: $btn-cta;
   color: $btn-cta-text;
+}
+
+.btn-primary {
+  background-color: $btn-primary;
+  color: $btn-text;
+}
+
+.btn-secondary {
+  background-color: $btn-secondary;
+  color: $btn-text;
 }
