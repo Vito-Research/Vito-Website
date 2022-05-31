@@ -1,35 +1,32 @@
 @use "../colors" as *;
 @use "../util";
 
-
 .section.algorithm {
-    flex-direction: column;
-    background-color: #F2F8FF;
-    color: $text-dark;
-    margin-top: 5%;
-    padding: 2em;
+  width: 100%;
+  flex-direction: column;
+  background-color: #f2f8ff;
+  color: $text-dark;
+  padding: 2em;
 }
 .algorithm-text {
-    flex: 1 1 50%;
-   
-    align-self: center;
-    color: $text-dark;
-  }
-  .algorithm-header {
-    color: $text-dark;
-    
-  }
-  .algorithm-caption {
-    color: $text-dark-muted;
-    width: 70vw;
-    padding-top: 2em;
-    text-align: left;
-  }
-  
-  sup {
-      color: $text-dark;
-  }
-  img.algo {
-      width: 70vw;
-      
-  }
+  flex: 1 1 50%;
+
+  align-self: center;
+  color: $text-dark;
+}
+.algorithm-header {
+  color: $text-dark;
+}
+.algorithm-caption {
+  color: $text-dark-muted;
+  width: 80%;
+  padding-top: 2em;
+  text-align: left;
+}
+
+sup {
+  color: $text-dark;
+}
+img.algo {
+  width: 70vw;
+}

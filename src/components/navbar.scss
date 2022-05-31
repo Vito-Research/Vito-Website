@@ -1,85 +1,79 @@
 @use "../colors" as *;
+@use "../util";
 
 .navbar {
   width: 100%;
-  height: 100%;
+  height: auto;
   display: flex;
-  position: sticky;
+  justify-content: right;
+  align-items: center;
+  background: linear-gradient(to right, $primary calc(2em + 100px), $secondary);
+  position: fixed;
+  z-index: 2;
   top: 0;
   left: 0;
   flex-direction: row;
-  overflow: hidden;
-  z-index: -1;
+  font-weight: 600;
+  color: $nav-primary;
+  padding: 3em;
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
 }
 
-.navbar-text {
-  flex: 1 1 50%;
-  padding: 2em;
-  align-self: center;
-}
-
-ul.nav-list {
-  list-style-type: none;
-  margin: inherit;
-  padding: 0;
-  // overflow: hidden;
-  background-color: transparent;
-  margin: 2%;
-}
-
-li.nav-item {
-  float: right;
-}
-
-li.nav-item {
-  font-size: larger;
-}
-
-li.nav-item a {
+.nav-brand {
   display: block;
-  color: white;
-  text-align: center;
-  padding: 24px 26px;
-  text-decoration: none;
-}
-
-.nav-brand a {
-  display: block;
-  color: white;
-  text-align: left;
+  justify-self: left;
+  flex: 1 1 25%;
+  margin-right: 2em;
+  font-size: 2.2em;
   font-weight: 700;
-  font-size: xx-large;
-  text-decoration: none;
-  padding: 24px 26px;
-  float: left !important;
-}
-.nav-btn {
-  font-size: larger !important;
-  width: 15vw;
 }
 
-li.nav-item a:hover {
-  background-color: $secondary;
-}
-
-#box1 {
-  background: #101010;
-  border-radius: 25px;
-  margin: 10px;
-  border-radius: 25px;
-  background: #a1d8fd;
-  padding: 2px;
-  width: 190px;
-  height: 40px;
-  float: right;
-}
-
-.li3 {
-  display: block;
-  color: white;
+.nav-item {
   text-align: center;
-  font-size: large;
-  padding: 10px 10px;
-  text-decoration: none;
-  float: left;
+  flex: 0 0 0;
+  font-size: 1.3em;
+  min-width: max-content;
+  margin-left: 1em;
+  margin-right: 1em;
+}
+
+.nav-btn-div {
+  text-align: center;
+  flex: 0 0 0;
+  font-size: 1.3em;
+  min-width: max-content;
+  margin-left: 0.5em;
+}
+
+.nav-btn {
+  font-size: 1.1em !important;
+  font-weight: 600 !important;
+  box-shadow: none !important;
+  border: none !important;
+}
+.nav-item a {
+  transition: color 0.2s ease;
+}
+
+.nav-item a.active,
+.nav-item a:hover {
+  color: $nav-active;
+}
+
+// very cool curved edge effect
+.navbar::before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 2em;
+  width: 50px;
+  height: 50px;
+  border-top-left-radius: 50px;
+  background-color: transparent;
+  box-shadow: -25px -25px 0px 25px $primary;
+  z-index: -1;
 }

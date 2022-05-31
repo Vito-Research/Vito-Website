@@ -7,26 +7,31 @@ function Landing() {
   const [landingTextOpacity, setOpacity] = useState(1.0);
 
   useEffect(() => {
-    const app = document.getElementById("App");
-    app?.addEventListener("scroll", () => {
+    window.addEventListener("scroll", () => {
       requestAnimationFrame(() => {
         setOpacity(
-          Math.min(1, Math.max(0, 1 - (2 * app.scrollTop) / app.clientHeight))
+          Math.min(
+            1,
+            Math.max(0, 1 - (2 * window.scrollY) / window.innerHeight)
+          )
         );
       });
     });
   }, []);
   return (
-    <div className="section landing">
-      <div className="landing-text" style={{ opacity: landingTextOpacity }}>
-        <h1>Reduce The Loss Of Life Due to Infection</h1>
-        <h3>An app that detects infection in realtime</h3>
-        <button type="button" className="btn btn-cta">
-          Learn More
-        </button>
+    <>
+      <div className="gradient" />
+      <div className="section landing" id="landing">
+        <div className="landing-text" style={{ opacity: landingTextOpacity }}>
+          <h1>Reduce The Loss Of Life Due to Infection</h1>
+          <h3>An app that detects infection in realtime</h3>
+          <button type="button" className="btn btn-cta">
+            Learn More
+          </button>
+        </div>
+        <Logo />
       </div>
-      <Logo />
-    </div>
+    </>
   );
 }
 
