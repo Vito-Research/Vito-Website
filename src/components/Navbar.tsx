@@ -17,12 +17,11 @@ function Navbar() {
       <div className="nav-item">
         <ScrollLink
           href="#"
-          to="root"
+          to="top"
           activeClass="active"
           spy
           smooth
           duration={500}
-          offset={-offset}
         >
           Home
         </ScrollLink>
