@@ -36,7 +36,7 @@ div.center {
   border-style: solid;
   cursor: pointer;
   box-shadow: 2px 2px 10px #0005;
-  transition: background-color 1s ease;
+  transition: background-color 0.2s ease;
 }
 
 .btn-cta:hover {
@@ -53,7 +53,14 @@ div.center {
   color: $btn-text;
 }
 
+.btn-primary:hover {
+  background-color: darken($btn-primary, 10%);
+}
+
 .btn-secondary {
   background-color: $btn-secondary;
   color: $btn-text;
+}
+.btn-secondary:hover {
+  background-color: darken($btn-secondary, 10%);
 }

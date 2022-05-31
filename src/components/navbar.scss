@@ -5,7 +5,7 @@
   width: 100%;
   height: auto;
   display: flex;
-  justify-content: space-between;
+  justify-content: right;
   align-items: center;
   background: linear-gradient(to right, $primary calc(2em + 100px), $secondary);
   position: fixed;
@@ -15,7 +15,7 @@
   flex-direction: row;
   font-weight: 600;
   color: $nav-primary;
-  padding: 1em 2em 1em 2em;
+  padding: 3em;
 
   a {
     color: inherit;
@@ -26,19 +26,27 @@
 .nav-brand {
   display: block;
   justify-self: left;
-  flex: 1;
-  margin-right: auto;
+  flex: 1 1 25%;
+  margin-right: 2em;
   font-size: 2.2em;
   font-weight: 700;
 }
 
 .nav-item {
   text-align: center;
-  display: block;
-  flex: 0 1 0;
-  font-size: 1.6em;
+  flex: 0 0 0;
+  font-size: 1.3em;
   min-width: max-content;
   margin-left: 1em;
+  margin-right: 1em;
+}
+
+.nav-btn-div {
+  text-align: center;
+  flex: 0 0 0;
+  font-size: 1.3em;
+  min-width: max-content;
+  margin-left: 0.5em;
 }
 
 .nav-btn {
@@ -47,12 +55,16 @@
   box-shadow: none !important;
   border: none !important;
 }
+.nav-item a {
+  transition: color 0.2s ease;
+}
 
-.nav-item.active,
-.nav-item:hover {
+.nav-item a.active,
+.nav-item a:hover {
   color: $nav-active;
 }
 
+// very cool curved edge effect
 .navbar::before {
   content: "";
   position: absolute;
@@ -64,7 +76,4 @@
   background-color: transparent;
   box-shadow: -25px -25px 0px 25px $primary;
   z-index: -1;
-}
-
-.navbar::after {
 }

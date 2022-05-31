@@ -21,7 +21,7 @@ function Landing() {
   return (
     <>
       <div className="gradient" />
-      <div className="section landing">
+      <div className="section landing" id="landing">
         <div className="landing-text" style={{ opacity: landingTextOpacity }}>
           <h1>Reduce The Loss Of Life Due to Infection</h1>
           <h3>An app that detects infection in realtime</h3>
