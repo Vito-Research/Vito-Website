@@ -24,7 +24,7 @@ function Landing() {
       <div className="section landing" id="landing">
         <div className="landing-text" style={{ opacity: landingTextOpacity }}>
           <h1>Detect Stress Events</h1>
-          <h3>An app that detects stress that may be due to infection</h3>
+          <h3>An app that utilizes smartwatches to detect stress that may be due to infection</h3>
           <a href="https://github.com/Vito-Research">
             <button type="button" className="btn btn-cta">
               Explore Code
