@@ -65,15 +65,15 @@ function Navbar() {
           Algorithm
         </ScrollLink>
       </div>
-      
-      <div className="nav-btn-div"> 
-      <a href="https://discord.gg/An95qFPPKK">
-        <button type="button" className="btn btn-secondary nav-btn" >
-          Join The Community
-        </button>
+
+      <div className="nav-btn-div">
+        <a href="https://discord.gg/An95qFPPKK">
+          <button type="button" className="btn btn-secondary nav-btn">
+            Join The Community
+          </button>
         </a>
       </div>
-      
+
     </nav>
   );
 }

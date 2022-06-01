@@ -26,9 +26,9 @@ function Landing() {
           <h1>Reduce The Loss Of Life Due to Infection</h1>
           <h3>An app that detects infection in realtime</h3>
           <a href="https://github.com/Vito-Research">
-          <button type="button" className="btn btn-cta">
-            Explore Code
-          </button>
+            <button type="button" className="btn btn-cta">
+              Explore Code
+            </button>
           </a>
         </div>
         <Logo />
