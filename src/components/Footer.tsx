@@ -46,14 +46,14 @@ function Footer() {
       <div className="footer-div footer-div-space">
         <h2>Platforms</h2>
         <p>
-          <a className="footer-text" href="/">
+          <a className="footer-text" href="/ComingSoon">
             Android
           </a>
         </p>
         <p>
           <a
             className="footer-text"
-            href="https://www.linkedin.com/company/vito-research/about/"
+            href="/ComingSoon"
           >
             iOS
           </a>
@@ -76,14 +76,14 @@ function Footer() {
       <div className="footer-div footer-div-space">
         <h2>Support</h2>
         <p>
-          <a className="footer-text" href="/">
+          <a className="footer-text" href="/ComingSoon">
             Privacy Policy
           </a>
         </p>
         <p>
           <a
             className="footer-text"
-            href="https://www.linkedin.com/company/vito-research/about/"
+            href="mailto:andreasink17@gmail.com"
           >
             Contact
           </a>
@@ -91,7 +91,7 @@ function Footer() {
         <p>
           <a
             className="footer-text"
-            href="https://www.craft.do/s/jK9mX5dA3exvRw"
+            href="/ComingSoon"
           >
             Terms and Conditions
           </a>

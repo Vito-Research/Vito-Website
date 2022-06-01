@@ -1,0 +1,12 @@
+@use "../util";
+@use "../colors" as *;
+
+.coming-div {
+    text-align: center;
+    align-items: center;
+    margin: auto;
+    width: 50%;
+}
+.coming-extra-space {
+    margin-top: 5%;
+}

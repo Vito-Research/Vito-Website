@@ -25,9 +25,11 @@ function Landing() {
         <div className="landing-text" style={{ opacity: landingTextOpacity }}>
           <h1>Reduce The Loss Of Life Due to Infection</h1>
           <h3>An app that detects infection in realtime</h3>
+          <a href="https://github.com/Vito-Research">
           <button type="button" className="btn btn-cta">
-            Learn More
+            Explore Code
           </button>
+          </a>
         </div>
         <Logo />
       </div>
