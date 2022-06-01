@@ -38,6 +38,11 @@ function Footer() {
       <div className="footer-div">
         <h2>Organization</h2>
         <p>
+          <Link className="footer-text" to="/People">
+            Code Contributors
+          </Link>
+        </p>
+        <p>
           <Link className="footer-text" to="/">
             About
           </Link>
