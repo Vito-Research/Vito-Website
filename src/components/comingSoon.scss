@@ -2,11 +2,11 @@
 @use "../colors" as *;
 
 .coming-div {
-    text-align: center;
-    align-items: center;
-    margin: auto;
-    width: 50%;
+    flex-direction: column;
+    background-color: #f2f8ff;
+    color: $text-dark;
+    padding: 2em;
 }
 .coming-extra-space {
-    margin-top: 5%;
+    margin-bottom: 5%;
 }

@@ -1,3 +1,6 @@
+import {
+  Link
+} from "react-router-dom";
 import "./footer.scss";
 
 function Footer() {
@@ -16,9 +19,9 @@ function Footer() {
       <div className="footer-div">
         <h2>Organization</h2>
         <p>
-          <a className="footer-text" href="/">
+          <Link className="footer-text" to="/">
             About
-          </a>
+          </Link>
         </p>
         <p>
           <a className="footer-text" href="https://discord.gg/fWaN3DFyCA">
@@ -46,17 +49,17 @@ function Footer() {
       <div className="footer-div footer-div-space">
         <h2>Platforms</h2>
         <p>
-          <a className="footer-text" href="/ComingSoon">
+          <Link className="footer-text" to="/ComingSoon">
             Android
-          </a>
+          </Link>
         </p>
         <p>
-          <a
+          <Link
             className="footer-text"
-            href="/ComingSoon"
+            to="/ComingSoon"
           >
             iOS
-          </a>
+          </Link>
         </p>
         <p>
           <a
@@ -76,9 +79,9 @@ function Footer() {
       <div className="footer-div footer-div-space">
         <h2>Support</h2>
         <p>
-          <a className="footer-text" href="/ComingSoon">
+          <Link className="footer-text" to="/ComingSoon">
             Privacy Policy
-          </a>
+          </Link>
         </p>
         <p>
           <a
@@ -89,12 +92,12 @@ function Footer() {
           </a>
         </p>
         <p>
-          <a
+          <Link
             className="footer-text"
-            href="/ComingSoon"
+            to="/ComingSoon"
           >
             Terms and Conditions
-          </a>
+          </Link>
         </p>
       </div>
     </footer>
