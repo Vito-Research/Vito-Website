@@ -7,6 +7,7 @@ import Landing from "./Landing";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
 import ComingSoon from "./ComingSoon";
+import People from "./People";
 import "./App.scss";
 import SectionContainer from "./SectionContainer";
 
@@ -41,6 +42,7 @@ function App() {
             )}
         />
         <Route path="/ComingSoon" element={<ComingSoon />} />
+        <Route path="/People" element={<People />} />
       </Routes>
     </BrowserRouter>
   );

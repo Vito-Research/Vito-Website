@@ -1,0 +1,73 @@
+@use "../colors" as *;
+@use "../util";
+
+.section.stats {
+  flex-direction: column;
+  background-color: #FFFF;
+  color: $text-dark;
+  padding: 2em;
+}
+.stats-text {
+  flex: 1 1 50%;
+
+  align-self: center;
+  color: $text-dark;
+}
+.stats-header {
+  color: $text-dark;
+}
+.stats-caption {
+  color: $text-dark-muted;
+  width: 70vw;
+  padding-top: 2em;
+  text-align: left;
+}
+
+.apps sup {
+  color: $text-dark;
+}
+.stats-img {
+  width: 70vw;
+}
+
+.stats-feature {
+  display: flex;
+  margin-top: 10%;
+}
+@media only screen and (max-width: 768px) {
+  .stats-feature {
+    display: block;
+  }
+}
+.stats-feature-cell {
+  width: 55vw;
+}
+.stats-feature-img {
+  width: 3vw;
+  height: 3vw;
+  margin-top: 20%;
+}
+@media only screen and (max-width: 768px) {
+  .stats-feature-img {
+    width: 7vw;
+    height: 7vw;
+    margin-top: 20%;
+  }
+}
+.stats-feature-header {
+  color: $primary;
+}
+.stats-feature-caption {
+  width: 25vw;
+  color: $text-dark-muted;
+  padding-top: 2em;
+  text-align: left;
+}
+@media only screen and (max-width: 768px) {
+  .stats-feature-caption {
+    width: 65vw;
+    color: $text-dark-muted;
+    padding-top: 2em;
+    text-align: left;
+  }
+}
