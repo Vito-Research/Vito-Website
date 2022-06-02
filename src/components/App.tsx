@@ -5,7 +5,6 @@ import {
 } from "react-router-dom";
 import Landing from "./Landing";
 import Navbar from "./Navbar";
-import Footer from "./Footer";
 import ComingSoon from "./ComingSoon";
 import People from "./People";
 import "./App.scss";
@@ -23,7 +22,7 @@ function App() {
               <Navbar />
               <Landing />
               <SectionContainer />
-              <Footer />
+              
 
             </div>
             )}
@@ -36,7 +35,7 @@ function App() {
               <Navbar />
               <Landing />
               <SectionContainer />
-              <Footer />
+              
 
             </div>
             )}
