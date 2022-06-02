@@ -1,0 +1,73 @@
+@use "../colors" as *;
+@use "../util";
+
+.section.people {
+  flex-direction: column;
+  background-color: #FFFF;
+  color: $text-dark;
+  padding: 2em;
+}
+.people-text {
+  flex: 1 1 50%;
+
+  align-self: center;
+  color: $text-dark;
+}
+.people-header {
+  color: $text-dark;
+}
+.people-caption {
+  color: $text-dark-muted;
+  width: 70vw;
+  padding-top: 2em;
+  text-align: left;
+}
+
+.people-sup {
+  color: $text-dark;
+}
+.people-img {
+  width: 70vw;
+}
+
+.people-feature {
+  display: flex;
+  margin-top: 10%;
+}
+@media only screen and (max-width: 768px) {
+  .people-feature {
+    display: block;
+  }
+}
+.people-feature-cell {
+  width: 55vw;
+}
+.people-feature-img {
+  width: 10vw;
+  height: 10vw;
+  border-radius: 20%;
+}
+@media only screen and (max-width: 768px) {
+  .people-feature-img {
+    width: 7vw;
+    height: 7vw;
+    margin-top: 20%;
+  }
+}
+.people-feature-header {
+  color: $primary;
+}
+.people-feature-caption {
+  width: 25vw;
+  color: $text-dark-muted;
+  padding-top: 2em;
+  text-align: left;
+}
+@media only screen and (max-width: 768px) {
+  .people-feature-caption {
+    width: 65vw;
+    color: $text-dark-muted;
+    padding-top: 2em;
+    text-align: left;
+  }
+}
