@@ -1,0 +1,12 @@
+@use "../util";
+@use "../colors" as *;
+
+.coming-div {
+    flex-direction: column;
+    background-color: #f2f8ff;
+    color: $text-dark;
+    padding: 2em;
+}
+.coming-extra-space {
+    margin-bottom: 5%;
+}
