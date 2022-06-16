@@ -4,6 +4,7 @@
 .section.apps {
   flex-direction: column;
   background-color: #f2f8ff;
+  border-radius: 3em;
   color: $text-dark;
   padding: 2em;
 }
@@ -32,7 +33,6 @@
 
 .apps-feature {
   display: flex;
-  margin-top: 10%;
 }
 @media only screen and (max-width: 768px) {
   .apps-feature {

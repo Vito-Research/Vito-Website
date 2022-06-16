@@ -7,7 +7,7 @@ import Back from "../res/Back.svg";
 function AppsSection() {
   return (
     <div className="section apps" id="apps">
-      <h1 className="apps-header">Apps</h1>
+      <h1 className="section-header">The App</h1>
 
       <img alt="Apps" className="apps-img" src={Apps} />
 

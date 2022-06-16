@@ -23,13 +23,25 @@ function Landing() {
       <div className="gradient" />
       <div className="section landing" id="landing">
         <div className="landing-text" style={{ opacity: landingTextOpacity }}>
-          <h1>Detect Stress Events</h1>
-          <h3>An app that utilizes smartwatches to detect stress that may be due to infection</h3>
-          <a href="https://github.com/Vito-Research">
-            <button type="button" className="btn btn-cta">
-              Explore Code
-            </button>
-          </a>
+          <strong>Our Mission</strong>
+          <h1>Reduce the Loss of Life Due to Infection</h1>
+          <p>
+            An app that utilizes smartwatches to detect stress that may be due
+            to infection
+          </p>
+
+          <button
+            type="button"
+            className="btn btn-cta"
+            onClick={() =>
+              window.scrollTo({
+                top: window.innerHeight - 48,
+                behavior: "smooth",
+              })
+            }
+          >
+            Learn More
+          </button>
         </div>
         <Logo />
       </div>

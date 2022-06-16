@@ -1,19 +1,19 @@
 .logo {
   position: absolute;
-  width: 50vw;
+  height: 80%;
   right: 0;
-  top: 5em;
+  top: 10%;
   overflow: hidden;
-  z-index: 0;
+  z-index: -1;
 }
 @media only screen and (max-width: 768px) {
   .logo {
     position: absolute;
-    width: 50vw;
+    height: 80%;
     right: 0;
-    top: 30em;
+    top: 20%;
     overflow: hidden;
-    z-index: 0;
+    z-index: -1;
   }
 }
 .logo img {

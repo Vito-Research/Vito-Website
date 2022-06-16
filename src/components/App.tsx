@@ -1,8 +1,4 @@
-import {
-  BrowserRouter,
-  Routes,
-  Route
-} from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Landing from "./Landing";
 import Navbar from "./Navbar";
 import ComingSoon from "./ComingSoon";
@@ -16,29 +12,23 @@ function App() {
       <Routes>
         <Route
           path="/"
-          element={(
+          element={
             <div className="App" id="App">
-
               <Navbar />
               <Landing />
               <SectionContainer />
-              
-
             </div>
-            )}
+          }
         />
         <Route
           path="/Home"
-          element={(
+          element={
             <div className="App" id="App">
-
               <Navbar />
               <Landing />
               <SectionContainer />
-              
-
             </div>
-            )}
+          }
         />
         <Route path="/ComingSoon" element={<ComingSoon />} />
         <Route path="/People" element={<People />} />
