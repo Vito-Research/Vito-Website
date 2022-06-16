@@ -3,7 +3,11 @@ import "./App.scss";
 import "./Landing.scss";
 import Logo from "./Logo";
 
-function Landing() {
+interface LandingProps {
+  children: JSX.Element[];
+}
+
+function Landing(props: LandingProps) {
   const [landingTextOpacity, setOpacity] = useState(1.0);
 
   useEffect(() => {
@@ -18,30 +22,14 @@ function Landing() {
       });
     });
   }, []);
+
+  const { children } = props;
   return (
     <>
       <div className="gradient" />
       <div className="section landing" id="landing">
         <div className="landing-text" style={{ opacity: landingTextOpacity }}>
-          <strong>Our Mission</strong>
-          <h1>Reduce the Loss of Life Due to Infection</h1>
-          <p>
-            An app that utilizes smartwatches to detect stress that may be due
-            to infection
-          </p>
-
-          <button
-            type="button"
-            className="btn btn-cta"
-            onClick={() =>
-              window.scrollTo({
-                top: window.innerHeight - 48,
-                behavior: "smooth",
-              })
-            }
-          >
-            Learn More
-          </button>
+          {children}
         </div>
         <Logo />
       </div>

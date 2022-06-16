@@ -1,21 +1,22 @@
 import "./comingSoon.scss";
 import Features from "../res/Features.png";
+import Landing from "./Landing";
 
 function ComingSoon() {
   return (
-    <div className="coming-div">
-      <div>
-        <h1 className="coming-Header">Coming Soon</h1>
-        <h3 className="coming-Header">An app that detects infection in realtime</h3>
-        <a className="" href="https://github.com/Vito-Research">
-          <button type="button" className="btn btn-cta coming-extra-space">
-            Help Develop Vito
-          </button>
-        </a>
-      </div>
-      <img alt="Vito Promo" src={Features} />
-
-    </div>
+    <Landing>
+      <strong>Oops...</strong>
+      <h1>Coming Soon!</h1>
+      <p>
+        We haven't finished this part of the site yet. Check back soon for more
+        updates!
+      </p>
+      <a href="https://github.com/Vito-Research">
+        <button type="button" className="btn btn-cta">
+          Help Develop Vito
+        </button>
+      </a>
+    </Landing>
   );
 }
 

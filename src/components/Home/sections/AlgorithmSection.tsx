@@ -1,5 +1,5 @@
 import "./algorithmSection.scss";
-import Algo from "../res/Algo.svg";
+import Algo from "../../../res/Algo.svg";
 
 function AlgorithmSection() {
   return (

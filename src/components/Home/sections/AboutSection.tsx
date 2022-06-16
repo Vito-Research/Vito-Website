@@ -1,5 +1,5 @@
 import "./aboutSection.scss";
-import Info from "../res/VitoMethod.svg";
+import Info from "../../../res/VitoMethod.svg";
 import StatsSection from "./StatsSection";
 
 function AboutSection() {

@@ -1,22 +1,23 @@
-@use "../colors" as *;
-@use "../util";
+@use "/src/colors" as *;
+@use "/src/util";
 
-.section.stats {
+.section.apps {
   flex-direction: column;
-  background-color: #ffff;
+  background-color: #f2f8ff;
+  border-radius: 3em;
   color: $text-dark;
   padding: 2em;
 }
-.stats-text {
+.apps-text {
   flex: 1 1 50%;
 
   align-self: center;
   color: $text-dark;
 }
-.stats-header {
+.apps-header {
   color: $text-dark;
 }
-.stats-caption {
+.apps-caption {
   color: $text-dark-muted;
   width: 70vw;
   padding-top: 2em;
@@ -26,45 +27,44 @@
 .apps sup {
   color: $text-dark;
 }
-.stats-img {
+.apps-img {
   width: 70vw;
 }
 
-.stats-feature {
+.apps-feature {
   display: flex;
-  margin-bottom: 2em;
 }
 @media only screen and (max-width: 768px) {
-  .stats-feature {
+  .apps-feature {
     display: block;
   }
 }
-.stats-feature-cell {
+.apps-feature-cell {
   width: 55vw;
 }
-.stats-feature-img {
+.apps-feature-img {
   width: 3vw;
   height: 3vw;
   margin-top: 20%;
 }
 @media only screen and (max-width: 768px) {
-  .stats-feature-img {
+  .apps-feature-img {
     width: 7vw;
     height: 7vw;
     margin-top: 20%;
   }
 }
-.stats-feature-header {
+.apps-feature-header {
   color: $primary;
 }
-.stats-feature-caption {
+.apps-feature-caption {
   width: 25vw;
   color: $text-dark-muted;
   padding-top: 2em;
   text-align: left;
 }
 @media only screen and (max-width: 768px) {
-  .stats-feature-caption {
+  .apps-feature-caption {
     width: 65vw;
     color: $text-dark-muted;
     padding-top: 2em;

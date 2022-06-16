@@ -1,6 +1,4 @@
-import {
-  Link
-} from "react-router-dom";
+import { Link } from "react-router-dom";
 import "./footer.scss";
 
 function Footer() {
@@ -73,15 +71,12 @@ function Footer() {
       <div className="footer-div footer-div-space">
         <h2>Platforms</h2>
         <p>
-          <Link className="footer-text" to="/ComingSoon">
+          <Link className="footer-text" to="/coming-soon">
             Android
           </Link>
         </p>
         <p>
-          <Link
-            className="footer-text"
-            to="/ComingSoon"
-          >
+          <Link className="footer-text" to="/coming-soon">
             iOS
           </Link>
         </p>
@@ -103,23 +98,17 @@ function Footer() {
       <div className="footer-div footer-div-space">
         <h2>Support</h2>
         <p>
-          <Link className="footer-text" to="/ComingSoon">
+          <Link className="footer-text" to="/coming-soon">
             Privacy Policy
           </Link>
         </p>
         <p>
-          <a
-            className="footer-text"
-            href="mailto:andreasink17@gmail.com"
-          >
+          <a className="footer-text" href="mailto:andreasink17@gmail.com">
             Contact
           </a>
         </p>
         <p>
-          <Link
-            className="footer-text"
-            to="/ComingSoon"
-          >
+          <Link className="footer-text" to="/coming-soon">
             Terms and Conditions
           </Link>
         </p>

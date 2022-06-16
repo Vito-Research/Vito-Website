@@ -1,5 +1,5 @@
-@use "../colors" as *;
-@use "../util";
+@use "/src/colors" as *;
+@use "/src/util";
 
 .section.about {
   flex-direction: column;

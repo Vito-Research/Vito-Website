@@ -1,8 +1,8 @@
 import "./appsSection.scss";
-import Apps from "../res/Apps.svg";
-import Noti from "../res/Noti.svg";
-import Bolt from "../res/Bolt.svg";
-import Back from "../res/Back.svg";
+import Apps from "../../../res/Apps.svg";
+import Noti from "../../../res/Noti.svg";
+import Bolt from "../../../res/Bolt.svg";
+import Back from "../../../res/Back.svg";
 
 function AppsSection() {
   return (
