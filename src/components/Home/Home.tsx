@@ -1,6 +1,5 @@
 import React from "react";
 import Landing from "../Landing";
-import Navbar from "../Navbar";
 import SectionContainer from "./sections/SectionContainer";
 
 function Home() {
@@ -20,7 +19,7 @@ function Home() {
           onClick={() => {
             window.scrollTo({
               top: window.innerHeight - 48,
-              behavior: "smooth",
+              behavior: "smooth"
             });
           }}
         >

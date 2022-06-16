@@ -1,6 +1,6 @@
 import { useRef, useState, useEffect } from "react";
-import { Link } from "react-router-dom";
-import { useLocation } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
+
 import { Link as ScrollLink } from "react-scroll";
 import "./navbar.scss";
 
@@ -78,7 +78,11 @@ function Navbar() {
         </div>
       )}
       <div className="nav-btn-div">
-        <a href="https://discord.gg/An95qFPPKK">
+        <a
+          href="https://discord.gg/An95qFPPKK"
+          target="_blank"
+          rel="noreferrer"
+        >
           <button type="button" className="btn btn-secondary nav-btn">
             Join The Community
           </button>

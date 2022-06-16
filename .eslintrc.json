@@ -18,6 +18,7 @@
     "react/jsx-filename-extension": ["warn", { "extensions": [".tsx"] }],
     "react/jsx-one-expression-per-line": "off",
     "react/jsx-wrap-multilines": "off",
+    "react/no-unescaped-entities": "off",
     "no-undef": "off",
     "quotes": ["warn", "double"],
     "import/extensions": [

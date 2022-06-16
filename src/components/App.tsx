@@ -1,5 +1,4 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Landing from "./Home/sections/Landing";
 import Navbar from "./Navbar";
 import ComingSoon from "./ComingSoon";
 import People from "./People";

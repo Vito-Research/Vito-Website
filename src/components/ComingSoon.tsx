@@ -1,5 +1,4 @@
 import "./comingSoon.scss";
-import Features from "../res/Features.png";
 import Landing from "./Landing";
 
 function ComingSoon() {
