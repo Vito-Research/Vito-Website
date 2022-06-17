@@ -1,5 +1,5 @@
 import { useRef, useState, useEffect } from "react";
-import { Link, useLocation } from "react-router-dom";
+import { Link, useLocation, Location } from "react-router-dom";
 
 import { Link as ScrollLink } from "react-scroll";
 import "./navbar.scss";
