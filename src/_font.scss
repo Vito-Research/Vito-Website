@@ -15,14 +15,26 @@
   font-family: "Nunito", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
+hr {
+  opacity: 0.2;
+}
 :root {
   color: $text-primary;
 }
 
 .section-header {
   font-size: 3em;
+  font-weight: 900;
 }
 
-.light {
-  opacity: 0.6;
+.muted {
+  color: $text-muted;
+}
+.light.muted,
+.light .muted {
+  color: $text-dark-muted;
+}
+
+p {
+  font-size: 1.2em;
 }

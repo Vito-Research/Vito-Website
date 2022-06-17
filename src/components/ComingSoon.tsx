@@ -4,7 +4,6 @@ import Landing from "./Landing";
 function ComingSoon() {
   return (
     <Landing>
-      <strong>Oops...</strong>
       <h1>Coming Soon!</h1>
       <p>
         We haven't finished this part of the site yet. Check back soon for more
