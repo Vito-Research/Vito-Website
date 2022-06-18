@@ -1,0 +1,64 @@
+/**
+Variables and mixins for different screen sizes
+**/
+
+$sm: 768px;
+$md: 992px;
+$lg: 1200px;
+
+@mixin large {
+  @media only screen and (max-width: $lg) {
+    @content;
+  }
+}
+@mixin medium {
+  @media only screen and (max-width: $md) {
+    @content;
+  }
+}
+@mixin small {
+  @media only screen and (max-width: $sm) {
+    @content;
+  }
+}
+@mixin wrap-sm {
+  @include small {
+    flex-wrap: wrap;
+
+    & > * {
+      flex: 1 0 100% !important;
+    }
+  }
+}
+
+@mixin wrap-md {
+  @include medium {
+    flex-wrap: wrap;
+
+    & > * {
+      flex: 1 0 100% !important;
+    }
+  }
+}
+
+@mixin wrap-lg {
+  @include large {
+    flex-wrap: wrap;
+
+    & > * {
+      flex: 1 0 100% !important;
+    }
+  }
+}
+
+@mixin adjust-padding($sm-pad, $md-pad, $lg-pad) {
+  @include large {
+    padding: $lg-pad;
+  }
+  @include medium {
+    padding: $md-pad;
+  }
+  @include small {
+    padding: $sm-pad;
+  }
+}

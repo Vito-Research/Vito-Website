@@ -39,7 +39,6 @@ function AboutSection() {
           className="info-img"
         />
       </div>
-      <hr />
       <StatsSection />
     </div>
   );
