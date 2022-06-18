@@ -62,3 +62,27 @@ $lg: 1200px;
     padding: $sm-pad;
   }
 }
+
+@mixin adjust-margin($sm-margin, $md-margin, $lg-margin) {
+  @include large {
+    margin: $lg-margin;
+  }
+  @include medium {
+    margin: $md-margin;
+  }
+  @include small {
+    margin: $sm-margin;
+  }
+}
+
+@mixin adjust-font-size($sm-font-size, $md-font-size, $lg-font-size) {
+  @include large {
+    font-size: $lg-font-size;
+  }
+  @include medium {
+    font-size: $md-font-size;
+  }
+  @include small {
+    font-size: $sm-font-size;
+  }
+}
