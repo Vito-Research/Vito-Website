@@ -18,76 +18,88 @@ function Navbar() {
         <a href="/">Vito</a>
       </div>
       <div className="nav-gradient" />
-      {(location && location.pathname === "/" && (
-        <>
+      <div className="nav-links" id="nav-links">
+        {(location && location.pathname === "/" && (
+          <>
+            <div className="nav-item">
+              <ScrollLink
+                href="#"
+                to="top"
+                activeClass="active"
+                spy
+                smooth
+                duration={500}
+              >
+                Home
+              </ScrollLink>
+            </div>
+            <div className="nav-item">
+              <ScrollLink
+                href="#"
+                to="about"
+                activeClass="active"
+                spy
+                smooth
+                duration={500}
+                offset={-offset}
+              >
+                About
+              </ScrollLink>
+            </div>
+            <div className="nav-item">
+              <ScrollLink
+                href="#"
+                to="apps"
+                activeClass="active"
+                spy
+                smooth
+                duration={500}
+                offset={-offset}
+              >
+                Apps
+              </ScrollLink>
+            </div>
+            <div className="nav-item">
+              <ScrollLink
+                href="#"
+                to="algorithm"
+                activeClass="active"
+                spy
+                smooth
+                duration={500}
+                offset={-offset}
+              >
+                Algorithm
+              </ScrollLink>
+            </div>
+          </>
+        )) || (
           <div className="nav-item">
-            <ScrollLink
-              href="#"
-              to="top"
-              activeClass="active"
-              spy
-              smooth
-              duration={500}
-            >
-              Home
-            </ScrollLink>
+            <Link to="/">Home</Link>
           </div>
-          <div className="nav-item">
-            <ScrollLink
-              href="#"
-              to="about"
-              activeClass="active"
-              spy
-              smooth
-              duration={500}
-              offset={-offset}
-            >
-              About
-            </ScrollLink>
-          </div>
-          <div className="nav-item">
-            <ScrollLink
-              href="#"
-              to="apps"
-              activeClass="active"
-              spy
-              smooth
-              duration={500}
-              offset={-offset}
-            >
-              Apps
-            </ScrollLink>
-          </div>
-          <div className="nav-item">
-            <ScrollLink
-              href="#"
-              to="algorithm"
-              activeClass="active"
-              spy
-              smooth
-              duration={500}
-              offset={-offset}
-            >
-              Algorithm
-            </ScrollLink>
-          </div>
-        </>
-      )) || (
-        <div className="nav-item">
-          <Link to="/">Home</Link>
+        )}
+        <div className="nav-btn-div">
+          <a
+            href="https://discord.gg/An95qFPPKK"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <button type="button" className="btn btn-secondary nav-btn">
+              Join The Community
+            </button>
+          </a>
         </div>
-      )}
-      <div className="nav-btn-div">
-        <a
-          href="https://discord.gg/An95qFPPKK"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <button type="button" className="btn btn-secondary nav-btn">
-            Join The Community
-          </button>
-        </a>
       </div>
+      <button
+        type="button"
+        className="hamburger"
+        onClick={() => {
+          const links = document.getElementById("nav-links");
+          links?.toggleAttribute("expand");
+        }}
+      >
+        <span className="hamburger-icon"></span>
+      </button>
     </nav>
   );
 }
