@@ -98,7 +98,7 @@ function Navbar() {
           links?.toggleAttribute("expand");
         }}
       >
-        <span className="hamburger-icon"></span>
+        <span className="hamburger-icon" />
       </button>
     </nav>
   );

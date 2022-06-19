@@ -1,16 +1,18 @@
-import "./sectionContainer.scss";
 import AboutSection from "./AboutSection";
 import AlgorithmSection from "./AlgorithmSection";
 import AppsSection from "./AppsSection";
+import StatsSection from "./StatsSection";
+import SectionContainer from "../../SectionContainer";
 import Footer from "./Footer";
 
-export default function SectionContainer() {
+export default function HomeSections() {
   return (
-    <div className="section-container light">
+    <SectionContainer>
       <AboutSection />
+      <StatsSection />
       <AppsSection />
       <AlgorithmSection />
       <Footer />
-    </div>
+    </SectionContainer>
   );
 }

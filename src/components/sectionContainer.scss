@@ -10,6 +10,10 @@
   padding: 2em;
   @include adjust-padding(0em, 0.5em, 1em);
   z-index: 1;
+
+  :last-child.section {
+    margin-bottom: 0;
+  }
 }
 
 @include medium {

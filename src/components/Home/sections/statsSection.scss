@@ -1,11 +1,13 @@
 @use "/src/colors" as *;
 @use "/src/util";
+@use "/src/screen" as *;
 
 .section.stats {
   flex-direction: column;
   background-color: $content-bg-blue;
   color: $text-dark;
   padding: 2em;
+  text-align: center;
 }
 .stats-text {
   flex: 1 1 50%;
@@ -13,14 +15,13 @@
   align-self: center;
   color: $text-dark;
 }
-.stats-header {
+.stats.section-header {
   color: $text-dark;
 }
 .stats-caption {
   color: $text-dark-muted;
   width: 70vw;
   padding-top: 2em;
-  text-align: left;
 }
 
 .apps sup {
@@ -32,15 +33,16 @@
 
 .stats-feature {
   display: flex;
-  margin-bottom: 2em;
-}
-@media only screen and (max-width: 768px) {
-  .stats-feature {
-    display: block;
-  }
+  justify-content: space-evenly;
+  @include wrap-md;
 }
 .stats-feature-cell {
-  width: 55vw;
+  flex: 0 1 25em;
+  padding: 1em;
+  margin: 1em 0.5em;
+  background-color: rgba($color: #c7edf7, $alpha: 1);
+  border-radius: 3em;
+  box-shadow: 10px 10px desaturate($primary, 20%);
 }
 .stats-feature-img {
   width: 3vw;
@@ -58,16 +60,5 @@
   color: $primary;
 }
 .stats-feature-caption {
-  width: 25vw;
   color: $text-dark-muted;
-  padding-top: 2em;
-  text-align: left;
-}
-@media only screen and (max-width: 768px) {
-  .stats-feature-caption {
-    width: 65vw;
-    color: $text-dark-muted;
-    padding-top: 2em;
-    text-align: left;
-  }
 }

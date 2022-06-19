@@ -86,3 +86,24 @@ $lg: 1200px;
     font-size: $sm-font-size;
   }
 }
+
+@mixin center-sm {
+  @include small {
+    align-items: center;
+    text-align: center;
+  }
+}
+
+@mixin center-md {
+  @include medium {
+    align-items: center;
+    text-align: center;
+  }
+}
+
+@mixin center-lg {
+  @include large {
+    align-items: center;
+    text-align: center;
+  }
+}
