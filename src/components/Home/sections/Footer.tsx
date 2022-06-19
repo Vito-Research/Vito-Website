@@ -83,7 +83,7 @@ function Footer() {
         <p>
           <a
             className="footer-text"
-            href="https://share.streamlit.io/andreasink/vito-visualization/main/vito_visualization_tools/main.py"
+            href="https://share.streamlit.io/vito-research/vito-visualization/main/main.py"
           >
             Streamlit
           </a>
