@@ -91,6 +91,7 @@ $lg: 1200px;
   @include small {
     align-items: center;
     text-align: center;
+    justify-content: center;
   }
 }
 
@@ -98,6 +99,7 @@ $lg: 1200px;
   @include medium {
     align-items: center;
     text-align: center;
+    justify-content: center;
   }
 }
 
@@ -105,5 +107,6 @@ $lg: 1200px;
   @include large {
     align-items: center;
     text-align: center;
+    justify-content: center;
   }
 }

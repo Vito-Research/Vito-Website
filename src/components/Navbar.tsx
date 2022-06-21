@@ -22,14 +22,7 @@ function Navbar() {
         {(location && location.pathname === "/" && (
           <>
             <div className="nav-item">
-              <ScrollLink
-                href="#"
-                to="top"
-                activeClass="active"
-                spy
-                smooth
-                duration={500}
-              >
+              <ScrollLink href="#" to="root" smooth duration={500}>
                 Home
               </ScrollLink>
             </div>
@@ -56,7 +49,7 @@ function Navbar() {
                 duration={500}
                 offset={-offset}
               >
-                Apps
+                Features
               </ScrollLink>
             </div>
             <div className="nav-item">

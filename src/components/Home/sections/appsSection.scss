@@ -1,18 +1,53 @@
 @use "/src/colors" as *;
 @use "/src/util";
+@use "/src/screen" as *;
 
 .section.apps {
-  flex-direction: column;
   background-color: $content-bg;
   border-radius: 3em;
   color: $text-dark;
   padding: 2em;
+  @include medium {
+    text-align: center;
+  }
+}
+.apps-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 .apps-text {
-  flex: 1 1 50%;
-
-  align-self: center;
+  flex: 1 1 60%;
   color: $text-dark;
+  hr {
+    margin: 1.5em 0em;
+  }
+  @include large {
+    hr {
+      margin: 2em 0em;
+    }
+  }
+}
+.apps-img {
+  flex: 0 0 20em;
+  display: flex;
+  justify-items: right;
+  img {
+    display: block;
+    margin-left: auto;
+    padding-left: 3em;
+    padding-right: 3em;
+    width: 100%;
+    height: auto;
+    align-self: center;
+  }
+
+  @include large {
+    display: none;
+  }
+}
+.features-intro {
+  max-width: 35em;
 }
 .apps-header {
   color: $text-dark;
@@ -21,7 +56,6 @@
   color: $text-dark-muted;
   width: 70vw;
   padding-top: 2em;
-  text-align: left;
 }
 
 .apps sup {
@@ -33,41 +67,33 @@
 
 .apps-feature {
   display: flex;
-}
-@media only screen and (max-width: 768px) {
-  .apps-feature {
-    display: block;
+  @include wrap-md;
+  @include center-md;
+
+  @include medium {
+    align-content: center;
   }
 }
 .apps-feature-cell {
-  width: 55vw;
+  flex: 0 0 30%;
+  margin-right: 2em;
+  @include medium {
+    max-width: 70%;
+    margin: 0;
+  }
 }
 .apps-feature-img {
-  width: 3vw;
-  height: 3vw;
-  margin-top: 20%;
-}
-@media only screen and (max-width: 768px) {
-  .apps-feature-img {
-    width: 7vw;
-    height: 7vw;
-    margin-top: 20%;
+  height: 3em;
+  width: auto;
+  @include medium {
+    height: 5em;
   }
 }
 .apps-feature-header {
   color: $primary;
+  font-size: 1.5em;
 }
 .apps-feature-caption {
-  width: 25vw;
   color: $text-dark-muted;
-  padding-top: 2em;
-  text-align: left;
-}
-@media only screen and (max-width: 768px) {
-  .apps-feature-caption {
-    width: 65vw;
-    color: $text-dark-muted;
-    padding-top: 2em;
-    text-align: left;
-  }
+  font-size: 1.4em;
 }
