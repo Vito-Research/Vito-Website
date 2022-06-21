@@ -42,7 +42,7 @@ function Navbar() {
             <div className="nav-item">
               <ScrollLink
                 href="#"
-                to="apps"
+                to="features"
                 activeClass="active"
                 spy
                 smooth

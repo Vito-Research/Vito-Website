@@ -2,7 +2,7 @@
 @use "/src/util";
 @use "/src/screen" as *;
 
-.section.apps {
+.section.features {
   background-color: $content-bg;
   border-radius: 3em;
   color: $text-dark;
@@ -11,12 +11,17 @@
     text-align: center;
   }
 }
-.apps-container {
+.features-container {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
-.apps-text {
+
+.features-intro {
+  max-width: 35em;
+}
+
+.features-text {
   flex: 1 1 60%;
   color: $text-dark;
   hr {
@@ -28,7 +33,44 @@
     }
   }
 }
-.apps-img {
+
+.feature-row {
+  display: flex;
+  @include wrap-md;
+  @include center-md;
+
+  @include medium {
+    align-content: center;
+  }
+}
+.feature-cell {
+  flex: 0 0 30%;
+  margin-right: 2em;
+  @include medium {
+    max-width: 70%;
+    margin: 0;
+  }
+  @include small {
+    max-width: 100%;
+  }
+}
+.feature-icon {
+  height: 3em;
+  width: auto;
+  @include medium {
+    height: 5em;
+  }
+}
+.feature-header {
+  color: $primary;
+  font-size: 1.2em;
+}
+.feature-caption {
+  color: $text-dark-muted;
+  font-size: 1em;
+}
+
+.phone-img {
   flex: 0 0 20em;
   display: flex;
   justify-items: right;
@@ -45,55 +87,4 @@
   @include large {
     display: none;
   }
-}
-.features-intro {
-  max-width: 35em;
-}
-.apps-header {
-  color: $text-dark;
-}
-.apps-caption {
-  color: $text-dark-muted;
-  width: 70vw;
-  padding-top: 2em;
-}
-
-.apps sup {
-  color: $text-dark;
-}
-.apps-img {
-  width: 70vw;
-}
-
-.apps-feature {
-  display: flex;
-  @include wrap-md;
-  @include center-md;
-
-  @include medium {
-    align-content: center;
-  }
-}
-.apps-feature-cell {
-  flex: 0 0 30%;
-  margin-right: 2em;
-  @include medium {
-    max-width: 70%;
-    margin: 0;
-  }
-}
-.apps-feature-img {
-  height: 3em;
-  width: auto;
-  @include medium {
-    height: 5em;
-  }
-}
-.apps-feature-header {
-  color: $primary;
-  font-size: 1.5em;
-}
-.apps-feature-caption {
-  color: $text-dark-muted;
-  font-size: 1.4em;
 }
