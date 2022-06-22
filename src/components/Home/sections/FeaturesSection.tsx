@@ -2,7 +2,7 @@ import "./featuresSection.scss";
 import Noti from "../../../res/Noti.svg";
 import Bolt from "../../../res/Bolt.svg";
 import Back from "../../../res/Back.svg";
-
+import Vito from "../../../res/iPhone.png";
 function FeaturesSection() {
   return (
     <div className="section features" id="features">
@@ -47,7 +47,7 @@ function FeaturesSection() {
           </div>
         </div>
         <div className="phone-img">
-          <img alt="Vito on iPhone" src="/src/res/iPhone.png" />
+          <img alt="Vito on iPhone" src={Vito} />
         </div>
       </p>
     </div>
