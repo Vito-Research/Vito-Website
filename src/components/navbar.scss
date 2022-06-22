@@ -68,12 +68,14 @@
     background: $nav-dropdown-bg;
     box-shadow: 1px 1px 5px #0004;
     .nav-item {
-      width: 50%;
+      color: $nav-dropdown-text;
       margin: 0.3em;
       font-size: 1.5em;
-      border-bottom: #fff3 1px solid;
     }
-
+    .nav-item a.active,
+    .nav-item a:hover {
+      color: $nav-dropdown-active;
+    }
     .nav-btn-div {
       width: 100%;
       margin: 0.3em;
