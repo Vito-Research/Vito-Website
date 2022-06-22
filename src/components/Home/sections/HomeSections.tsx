@@ -3,7 +3,7 @@ import AlgorithmSection from "./AlgorithmSection";
 import FeaturesSection from "./FeaturesSection";
 import StatsSection from "./StatsSection";
 import SectionContainer from "../../SectionContainer";
-import Footer from "./Footer";
+import HomeFooter from "./HomeFooter";
 
 export default function HomeSections() {
   return (
@@ -12,7 +12,7 @@ export default function HomeSections() {
       <StatsSection />
       <FeaturesSection />
       <AlgorithmSection />
-      <Footer />
+      <HomeFooter />
     </SectionContainer>
   );
 }

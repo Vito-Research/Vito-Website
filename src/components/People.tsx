@@ -1,3 +1,4 @@
+import Footer from "./Footer";
 import Landing from "./Landing";
 import "./people.scss";
 import SectionContainer from "./SectionContainer";
@@ -40,6 +41,7 @@ function People() {
             </div>
           </div>
         </div>
+        <Footer />
       </SectionContainer>
     </>
   );
