@@ -15,7 +15,7 @@ function People() {
           onClick={() => {
             window.scrollTo({
               top: window.innerHeight - 48,
-              behavior: "smooth",
+              behavior: "smooth"
             });
           }}
         >
