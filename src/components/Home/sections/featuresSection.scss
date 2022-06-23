@@ -1,0 +1,90 @@
+@use "/src/colors" as *;
+@use "/src/util";
+@use "/src/screen" as *;
+
+.section.features {
+  background-color: $content-bg;
+  border-radius: 3em;
+  color: $text-dark;
+  padding: 2em;
+  @include medium {
+    text-align: center;
+  }
+}
+.features-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.features-intro {
+  max-width: 35em;
+}
+
+.features-text {
+  flex: 1 1 60%;
+  color: $text-dark;
+  hr {
+    margin: 1.5em 0em;
+  }
+  @include large {
+    hr {
+      margin: 2em 0em;
+    }
+  }
+}
+
+.feature-row {
+  display: flex;
+  @include wrap-md;
+  @include center-md;
+
+  @include medium {
+    align-content: center;
+  }
+}
+.feature-cell {
+  flex: 0 0 30%;
+  margin-right: 2em;
+  @include medium {
+    max-width: 70%;
+    margin: 0;
+  }
+  @include small {
+    max-width: 100%;
+  }
+}
+.feature-icon {
+  height: 3em;
+  width: auto;
+  @include medium {
+    height: 5em;
+  }
+}
+.feature-header {
+  color: $primary;
+  font-size: 1.2em;
+}
+.feature-caption {
+  color: $text-dark-muted;
+  font-size: 1em;
+}
+
+.phone-img {
+  flex: 0 0 20em;
+  display: flex;
+  justify-items: right;
+  img {
+    display: block;
+    margin-left: auto;
+    padding-left: 3em;
+    padding-right: 3em;
+    width: 100%;
+    height: auto;
+    align-self: center;
+  }
+
+  @include large {
+    display: none;
+  }
+}

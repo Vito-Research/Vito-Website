@@ -1,6 +1,5 @@
 import "./aboutSection.scss";
 import Info from "../../../res/VitoMethod.svg";
-import StatsSection from "./StatsSection";
 
 function AboutSection() {
   return (
@@ -39,8 +38,6 @@ function AboutSection() {
           className="info-img"
         />
       </div>
-      <hr />
-      <StatsSection />
     </div>
   );
 }

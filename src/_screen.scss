@@ -1,0 +1,112 @@
+/**
+Variables and mixins for different screen sizes
+**/
+
+$sm: 768px;
+$md: 992px;
+$lg: 1200px;
+
+@mixin large {
+  @media only screen and (max-width: $lg) {
+    @content;
+  }
+}
+@mixin medium {
+  @media only screen and (max-width: $md) {
+    @content;
+  }
+}
+@mixin small {
+  @media only screen and (max-width: $sm) {
+    @content;
+  }
+}
+@mixin wrap-sm {
+  @include small {
+    flex-wrap: wrap;
+
+    & > * {
+      flex: 1 0 100% !important;
+    }
+  }
+}
+
+@mixin wrap-md {
+  @include medium {
+    flex-wrap: wrap;
+
+    & > * {
+      flex: 1 0 100% !important;
+    }
+  }
+}
+
+@mixin wrap-lg {
+  @include large {
+    flex-wrap: wrap;
+
+    & > * {
+      flex: 1 0 100% !important;
+    }
+  }
+}
+
+@mixin adjust-padding($sm-pad, $md-pad, $lg-pad) {
+  @include large {
+    padding: $lg-pad;
+  }
+  @include medium {
+    padding: $md-pad;
+  }
+  @include small {
+    padding: $sm-pad;
+  }
+}
+
+@mixin adjust-margin($sm-margin, $md-margin, $lg-margin) {
+  @include large {
+    margin: $lg-margin;
+  }
+  @include medium {
+    margin: $md-margin;
+  }
+  @include small {
+    margin: $sm-margin;
+  }
+}
+
+@mixin adjust-font-size($sm-font-size, $md-font-size, $lg-font-size) {
+  @include large {
+    font-size: $lg-font-size;
+  }
+  @include medium {
+    font-size: $md-font-size;
+  }
+  @include small {
+    font-size: $sm-font-size;
+  }
+}
+
+@mixin center-sm {
+  @include small {
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+  }
+}
+
+@mixin center-md {
+  @include medium {
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+  }
+}
+
+@mixin center-lg {
+  @include large {
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+  }
+}

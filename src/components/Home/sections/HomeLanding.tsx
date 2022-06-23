@@ -4,7 +4,7 @@ function HomeLanding() {
   return (
     <Landing>
       <strong>Our Mission</strong>
-      <h1>Catch infection earlier using biometric data</h1>
+      <h1>Catch Infection Earlier Using Biometric Data</h1>
       <p>
         An app that utilizes smartwatches to detect stress that may be due to
         infection
