@@ -1,4 +1,5 @@
 @use "../colors" as *;
+@use "../screen" as *;
 
 .landing {
   width: 100%;
@@ -7,6 +8,7 @@
   position: sticky;
   top: 0;
   left: 0;
+  margin: 0;
   flex-direction: row;
   overflow: hidden;
   z-index: 0;
@@ -21,6 +23,34 @@
 
 .landing-text {
   flex: 1 1 50%;
-  padding: 2em;
+  margin-left: 3em;
+  margin-right: 3em;
   align-self: center;
+  text-shadow: 1px 1px 5px #0006;
+  max-width: 40em;
+
+  strong {
+    border-bottom: 1px solid #fff4;
+  }
+  h1 {
+    margin-top: 0.1em;
+    font-size: 3em;
+    font-weight: 800;
+
+    @include adjust-font-size(2em, 2.3em, 2.6em);
+  }
+
+  p {
+    font-size: 1.6em;
+    color: $text-muted;
+  }
+}
+
+.landing .btn-cta {
+  font-size: 2.5em;
+  border-radius: 0.5em;
+  font-weight: 800;
+  padding: 0.1em 1em;
+
+  @include adjust-font-size(2em, 2.3em, 2.6em);
 }

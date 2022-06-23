@@ -13,11 +13,15 @@
 $primary: #1578ec;
 $secondary: #65cafa;
 
+// For main content, for contrast between sections
+$content-bg: white;
+$content-bg-blue: #f2f8ff;
+
 // Text colors
 $text-primary: #fff;
-$text-muted: #fff8;
+$text-muted: #fffc;
 $text-dark: #111;
-$text-dark-muted: #3338;
+$text-dark-muted: rgba(17, 17, 17, 0.664);
 
 //Buttons
 $btn-primary: $primary;
@@ -30,3 +34,6 @@ $btn-text: $text-primary;
 $nav-primary: $text-primary; // Normal navbar text (inactive links)
 $nav-active: $text-muted; // Active navbar text (active links)
 $nav-btn: $btn-primary; // Navbar action button background color
+$nav-dropdown-bg: rgb(255, 255, 255);
+$nav-dropdown-text: rgb(133, 133, 133);
+$nav-dropdown-active: rgb(0, 0, 0);

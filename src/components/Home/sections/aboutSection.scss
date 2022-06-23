@@ -1,0 +1,39 @@
+@use "/src/colors" as *;
+@use "/src/util";
+@use "/src/screen" as screen;
+.section.about {
+  background-color: white;
+  color: black;
+}
+
+.what-is-vito {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  @include screen.wrap-lg;
+}
+
+.about-text {
+  flex: 0 1 40%;
+  padding: 2em;
+  align-self: center;
+  color: black;
+}
+.paragraph-label {
+  display: block;
+  color: $primary;
+  border-bottom: 1px solid rgba($primary, 0.3);
+}
+
+.paragraph-label + p {
+  margin-top: 0.5em;
+}
+.about sup {
+  color: black;
+}
+
+.info-img {
+  flex: 0 0 50%;
+  width: 100%;
+  height: auto;
+}

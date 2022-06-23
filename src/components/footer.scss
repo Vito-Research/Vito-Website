@@ -1,12 +1,12 @@
 .section.footer {
   display: flex;
   background-color: #f2f8ff;
+  border-radius: 3em;
   color: black;
   padding: 2em;
-  margin-left: 2em;
+  margin-bottom: 0;
   position: relative;
   z-index: 1;
-
 }
 
 @media only screen and (max-width: 768px) {
@@ -15,7 +15,6 @@
     background-color: white;
     color: black;
     padding: 3%;
-
   }
 }
 

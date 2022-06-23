@@ -2,9 +2,6 @@
 @use "../util";
 
 .section.people {
-  flex-direction: column;
-  background-color: #FFFF;
-  color: $text-dark;
   padding: 2em;
 }
 .people-text {
@@ -32,7 +29,6 @@
 
 .people-feature {
   display: flex;
-  margin-top: 10%;
 }
 @media only screen and (max-width: 768px) {
   .people-feature {
