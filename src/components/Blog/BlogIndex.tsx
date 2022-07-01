@@ -3,13 +3,14 @@ import { formatDistanceToNow } from "date-fns";
 import { useContext, useEffect, useState } from "react";
 import { Link, useSearchParams } from "react-router-dom";
 import { GhostApiContext } from "./Blog";
+import BlogPreview from "./BlogPreview";
 
 function BlogIndex() {
   const [posts, setPosts] = useState<PostsOrPages>();
   const api = useContext(GhostApiContext);
   useEffect(() => {
     const getPosts = async () => {
-      setPosts(await api?.posts.browse());
+      setPosts(await api?.posts.browse({ formats: ["html", "plaintext"] }));
     };
     getPosts();
   }, []);
@@ -17,16 +18,11 @@ function BlogIndex() {
     <div className="section blog-index">
       <h1 className="section-header">Blog Index</h1>
       <hr />
-      {posts?.map((post) => (
-        <h2>
-          <Link to={`/blog/${post.slug}`}>
-            {post.title} -{" "}
-            {formatDistanceToNow(new Date(post.published_at ?? ""), {
-              addSuffix: true,
-            })}
-          </Link>
-        </h2>
-      ))}
+      <div className="blog-preview-container">
+        {posts?.map((post) => (
+          <BlogPreview post={post} />
+        ))}
+      </div>
     </div>
   );
 }

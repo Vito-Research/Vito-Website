@@ -4,29 +4,43 @@ import React, { useContext, useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import { GhostApiContext } from "./Blog";
 
-function BlogPost() {
-  const { slug } = useParams();
-  const api = useContext(GhostApiContext);
-  const [post, setPost] = useState<PostOrPage | null>();
+interface BlogPostProps {
+  postProp?: PostOrPage;
+  rounded: boolean;
+}
 
-  useEffect(() => {
-    const getPost = async () => {
-      await api?.posts
-        .read({ slug: slug! }, { include: ["authors", "tags", "count.posts"] })
-        .then((p) => {
-          setPost(p);
-        })
-        .catch(() => {
-          setPost(null);
-        });
-    };
-    getPost();
-  }, [slug]);
+function BlogPost({ postProp, rounded }: BlogPostProps) {
+  const [post, setPost] = useState<PostOrPage | null>();
+  if (postProp === undefined) {
+    const { slug } = useParams();
+    const api = useContext(GhostApiContext);
+
+    useEffect(() => {
+      const getPost = async () => {
+        await api?.posts
+          .read(
+            { slug: slug! },
+            { include: ["authors", "tags", "count.posts"] }
+          )
+          .then((p) => {
+            setPost(p);
+          })
+          .catch(() => {
+            setPost(null);
+          });
+      };
+      getPost();
+    }, []);
+  } else {
+    useEffect(() => {
+      setPost(postProp);
+    }, []);
+  }
   return (
     <>
       {post && (
         <div
-          className="blog-post-feature-img"
+          className={`blog-post-feature-img${rounded ? " rounded" : ""}`}
           style={
             post.feature_image
               ? { backgroundImage: `url(${post?.feature_image!})` }
@@ -37,7 +51,9 @@ function BlogPost() {
       <div className="section blog-post">
         {(post && (
           <>
-            <h1 className="section-header">{post?.title}</h1>
+            <h1 className="section-header">
+              <a href={`/blog/${post.slug}`}>{post.title}</a>
+            </h1>
             <h2>{post?.primary_author?.name}</h2>
             <h2>
               {(() => {
