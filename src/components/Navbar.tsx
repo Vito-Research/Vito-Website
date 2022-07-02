@@ -6,12 +6,6 @@ import "./navbar.scss";
 
 function Navbar() {
   const navbarRef = useRef<HTMLElement>(null);
-  const [offset, setOffset] = useState(0);
-
-  const location: Location = useLocation();
-  useEffect(() => {
-    setOffset((navbarRef.current?.clientHeight ?? 0) + 100);
-  }, [navbarRef]);
   return (
     <nav className="navbar" id="navbar" ref={navbarRef}>
       <div className="nav-brand">

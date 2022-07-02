@@ -6,9 +6,9 @@ import "./App.scss";
 import Home from "./Home/Home";
 import NotFound from "./NotFound";
 import Blog from "./Blog/Blog";
-import BlogPost from "./Blog/BlogPost";
 import BlogIndex from "./Blog/BlogIndex";
 import BlogFeed from "./Blog/BlogFeed";
+import BlogPostPage from "./Blog/BlogPostPage";
 
 function App() {
   return (
@@ -22,7 +22,7 @@ function App() {
         <Route path="/blog" element={<Blog />}>
           <Route index element={<BlogFeed />} />
           <Route path="index" element={<BlogIndex />} />
-          <Route path=":slug" element={<BlogPost rounded />} />
+          <Route path=":slug" element={<BlogPostPage />} />
         </Route>
         <Route path="*" element={<NotFound />} />
       </Routes>

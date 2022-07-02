@@ -58,6 +58,8 @@
 .blog-post {
   padding: 0em 10em;
   padding-bottom: 10em;
+}
+.blog-post-head {
   a {
     text-decoration: none;
     color: $text-dark;
@@ -66,10 +68,27 @@
     color: $text-dark-muted;
   }
 }
-
 .blog .section-container {
   padding: 0;
+  min-height: 100vh;
   .section {
     background-color: white;
   }
+}
+
+.btn-tweet {
+  background-color: $btn-secondary;
+  border-radius: 10px;
+  padding: 3px 7px;
+  color: white !important;
+  font-weight: 800;
+  text-align: center;
+}
+
+.btn-tweet:hover {
+  background-color: darken($btn-secondary, 10%);
+}
+
+.post-not-found {
+  text-align: center;
 }

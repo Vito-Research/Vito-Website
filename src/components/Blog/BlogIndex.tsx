@@ -1,7 +1,5 @@
 import { PostsOrPages } from "@tryghost/content-api";
-import { formatDistanceToNow } from "date-fns";
 import { useContext, useEffect, useState } from "react";
-import { Link, useSearchParams } from "react-router-dom";
 import { GhostApiContext } from "./Blog";
 import BlogPreview from "./BlogPreview";
 

@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet";
 import Footer from "./Footer";
 import Landing from "./Landing";
 import "./people.scss";
@@ -6,6 +7,9 @@ import SectionContainer from "./SectionContainer";
 function People() {
   return (
     <>
+      <Helmet>
+        <title>Vito Contributors</title>
+      </Helmet>
       <Landing>
         <h1>Contributors</h1>
         <p>We're the people who help make Vito.</p>
@@ -15,7 +19,7 @@ function People() {
           onClick={() => {
             window.scrollTo({
               top: window.innerHeight - 48,
-              behavior: "smooth"
+              behavior: "smooth",
             });
           }}
         >
