@@ -22,8 +22,8 @@ function Blog() {
   const api = useMemo<GhostAPI>(
     () =>
       new GhostContentAPI({
-        url: "https://vito-test.ghost.io",
-        key: "267fbd81200677364417c21bb9",
+        url: "https://vito.ghost.io",
+        key: "f9afb680a32a2eee5fda92a9fc",
         version: "v5.0",
       }),
     []
