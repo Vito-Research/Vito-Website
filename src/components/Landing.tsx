@@ -25,15 +25,12 @@ function Landing(props: LandingProps) {
 
   const { children } = props;
   return (
-    <>
-      <div className="gradient" />
-      <div className="section landing" id="landing">
-        <div className="landing-text" style={{ opacity: landingTextOpacity }}>
-          {children}
-        </div>
-        <Logo />
+    <div className="section landing" id="landing">
+      <div className="landing-text" style={{ opacity: landingTextOpacity }}>
+        {children}
       </div>
-    </>
+      <Logo />
+    </div>
   );
 }
 

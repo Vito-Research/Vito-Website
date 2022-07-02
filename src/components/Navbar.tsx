@@ -1,7 +1,7 @@
 import { useRef, useState, useEffect } from "react";
 import { Link, useLocation, Location } from "react-router-dom";
 
-import { Link as ScrollLink } from "react-scroll";
+import { NavLink } from "react-router-dom";
 import "./navbar.scss";
 
 function Navbar() {
@@ -19,58 +19,15 @@ function Navbar() {
       </div>
       <div className="nav-gradient" />
       <div className="nav-links" id="nav-links">
-        {(location && location.pathname === "/" && (
-          <>
-            <div className="nav-item">
-              <ScrollLink href="#" to="root" smooth duration={500}>
-                Home
-              </ScrollLink>
-            </div>
-            <div className="nav-item">
-              <ScrollLink
-                href="#"
-                to="about"
-                activeClass="active"
-                spy
-                smooth
-                duration={500}
-                offset={-offset}
-              >
-                About
-              </ScrollLink>
-            </div>
-            <div className="nav-item">
-              <ScrollLink
-                href="#"
-                to="features"
-                activeClass="active"
-                spy
-                smooth
-                duration={500}
-                offset={-offset}
-              >
-                Features
-              </ScrollLink>
-            </div>
-            <div className="nav-item">
-              <ScrollLink
-                href="#"
-                to="algorithm"
-                activeClass="active"
-                spy
-                smooth
-                duration={500}
-                offset={-offset}
-              >
-                Algorithm
-              </ScrollLink>
-            </div>
-          </>
-        )) || (
-          <div className="nav-item">
-            <Link to="/">Home</Link>
-          </div>
-        )}
+        <div className="nav-item">
+          <NavLink to="/">Home</NavLink>
+        </div>
+        <div className="nav-item">
+          <NavLink to="/people">Contributors</NavLink>
+        </div>
+        <div className="nav-item">
+          <NavLink to="/blog">Blog</NavLink>
+        </div>
         <div className="nav-btn-div">
           <a
             href="https://discord.gg/An95qFPPKK"

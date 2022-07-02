@@ -1,5 +1,5 @@
 import GhostContentAPI, { GhostAPI } from "@tryghost/content-api";
-import React, { useMemo } from "react";
+import React, { useEffect, useMemo } from "react";
 import { Outlet, useParams } from "react-router-dom";
 import Landing from "../Landing";
 import SectionContainer from "../SectionContainer";
@@ -9,6 +9,16 @@ const GhostApiContext = React.createContext<GhostAPI | null>(null);
 
 function Blog() {
   const params = useParams();
+  const singleBlogPost = params.slug !== undefined;
+  useEffect(() => {
+    if (singleBlogPost) {
+      document.getElementById("navbar")!.style.position = "sticky";
+    }
+    return () => {
+      document.getElementById("navbar")!.style.position = "";
+    };
+  }, [params.slug]);
+
   const api = useMemo<GhostAPI>(
     () =>
       new GhostContentAPI({
@@ -21,7 +31,7 @@ function Blog() {
 
   return (
     <div className="page blog">
-      {params.slug === undefined && (
+      {!singleBlogPost && (
         <Landing>
           <h1 className="">Vito Blog</h1>
           <p>

@@ -20,7 +20,7 @@ function BlogPreview({ post }: BlogPreviewProps) {
         />
         <div className="blog-preview-content">
           <h2>{post.title}</h2>
-          <p>{`${post.plaintext?.substring(0, 100)}...`}</p>
+          <p>{`${post.excerpt}...`}</p>
         </div>
       </Link>
     </div>

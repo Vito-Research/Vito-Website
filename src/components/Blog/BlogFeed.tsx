@@ -1,7 +1,6 @@
-import { PostOrPage, PostsOrPages } from "@tryghost/content-api";
-import { format } from "date-fns";
+import { PostsOrPages } from "@tryghost/content-api";
 import React, { useContext, useEffect, useState } from "react";
-import { Link, useParams, useSearchParams } from "react-router-dom";
+import { useSearchParams } from "react-router-dom";
 import { GhostApiContext } from "./Blog";
 import BlogPost from "./BlogPost";
 

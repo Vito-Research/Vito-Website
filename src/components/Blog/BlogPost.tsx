@@ -17,20 +17,22 @@ function BlogPost({ postProp, rounded }: BlogPostProps) {
 
     useEffect(() => {
       const getPost = async () => {
-        await api?.posts
-          .read(
-            { slug: slug! },
-            { include: ["authors", "tags", "count.posts"] }
-          )
-          .then((p) => {
-            setPost(p);
-          })
-          .catch(() => {
-            setPost(null);
-          });
+        if (!post) {
+          await api?.posts
+            .read(
+              { slug: slug! },
+              { include: ["authors", "tags", "count.posts"] }
+            )
+            .then((p) => {
+              setPost(p);
+            })
+            .catch(() => {
+              setPost(null);
+            });
+        }
       };
       getPost();
-    }, []);
+    }, [slug]);
   } else {
     useEffect(() => {
       setPost(postProp);
@@ -52,7 +54,7 @@ function BlogPost({ postProp, rounded }: BlogPostProps) {
         {(post && (
           <>
             <h1 className="section-header">
-              <a href={`/blog/${post.slug}`}>{post.title}</a>
+              <Link to={`/blog/${post.slug}`}>{post.title}</Link>
             </h1>
             <h2>{post?.primary_author?.name}</h2>
             <h2>
