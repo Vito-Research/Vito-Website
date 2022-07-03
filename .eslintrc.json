@@ -19,6 +19,7 @@
     "react/jsx-one-expression-per-line": "off",
     "react/jsx-wrap-multilines": "off",
     "react/no-unescaped-entities": "off",
+    "implicit-arrow-linebreak": "off",
     "no-undef": "off",
     "quotes": ["warn", "double"],
     "import/extensions": [
