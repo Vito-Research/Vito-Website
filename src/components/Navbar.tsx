@@ -1,7 +1,6 @@
-import { useRef, useState, useEffect } from "react";
-import { Link, useLocation, Location } from "react-router-dom";
-
+import { useRef } from "react";
 import { NavLink } from "react-router-dom";
+
 import "./navbar.scss";
 
 function Navbar() {

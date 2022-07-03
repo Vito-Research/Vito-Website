@@ -14,7 +14,7 @@ function BlogFeed() {
       setPosts(
         await api?.posts.browse({
           limit: 5,
-          page: query.has("page") ? parseInt(query.get("page") ?? "0", 10) : 0,
+          page: query.has("page") ? parseInt(query.get("page") ?? "0", 10) : 0
         })
       );
     };

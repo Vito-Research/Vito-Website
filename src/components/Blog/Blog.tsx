@@ -1,6 +1,7 @@
 import GhostContentAPI, { GhostAPI } from "@tryghost/content-api";
 import React, { useEffect, useMemo } from "react";
 import { Outlet, useParams } from "react-router-dom";
+import Footer from "../Footer";
 import Landing from "../Landing";
 import SectionContainer from "../SectionContainer";
 import "./blog.scss";
@@ -24,7 +25,7 @@ function Blog() {
       new GhostContentAPI({
         url: "https://vito.ghost.io",
         key: "f9afb680a32a2eee5fda92a9fc",
-        version: "v5.0",
+        version: "v5.0"
       }),
     []
   );
@@ -44,6 +45,7 @@ function Blog() {
         <GhostApiContext.Provider value={api}>
           <Outlet />
         </GhostApiContext.Provider>
+        <Footer />
       </SectionContainer>
     </div>
   );
