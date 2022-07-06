@@ -38,12 +38,39 @@ function People() {
               />
               <h3 className="people-feature-header">Andreas Ink</h3>
               <caption className="people-feature-caption">
-                Founded Vito to help people like his Dad who have weaker immune
-                systems and to hopefully prevent the spread of infection that
-                led to his Aunt's death
+                Founded Vito to hopefully prevent the spread of infection that
+                led to his Aunt's death.  Works on most repositories of Vito, primarily with app development and data analysis.
               </caption>
             </div>
+           
+            <div className="people-feature-cell">
+              <img
+                className="people-feature-img"
+                alt="Andreas's Profile Pic"
+                src="https://avatars.githubusercontent.com/u/13423991?v=4"
+              />
+              <h3 className="people-feature-header">Ricky LeDew</h3>
+              <caption className="people-feature-caption">
+                Leads web development with Vito, pursing a CS degree at UNF
+              </caption>
+           
           </div>
+
+          <div className="people-feature-cell">
+              <img
+                className="people-feature-img"
+                alt="Andreas's Profile Pic"
+                src="https://avatars.githubusercontent.com/u/62920769?v=4"
+              />
+              <h3 className="people-feature-header">Ethan Cloin</h3>
+              <caption className="people-feature-caption">
+              B.S. in Computer Science, furthering a web development skill set, assists with data analysis
+              </caption>
+           
+          </div>
+          
+          </div>
+          
         </div>
         <Footer />
       </SectionContainer>
