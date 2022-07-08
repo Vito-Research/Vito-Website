@@ -4,6 +4,7 @@ import Landing from "./Landing";
 import "./people.scss";
 import SectionContainer from "./SectionContainer";
 import DrK from "../res/DrK.png";
+
 function People() {
   return (
     <>
