@@ -30,8 +30,8 @@ function AlgorithmSection() {
         </p>
         <p>
           In the future, we also plan to experiment with using neural networks
-          to match or exceed the performance of our current algorithm. We might
-          also allow users to opt-in to contribute anonymized vitals data so we
+          to match or exceed the performance of our current algorithm. We may
+          allow users to opt-in to contribute de-identified vitals data so we
           can continuously train the network and improve detection accuracy for
           all Vito users.
         </p>

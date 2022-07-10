@@ -14,9 +14,9 @@ function AboutSection() {
           </p>
           <hr />
           <p>
-            There is evidence that physiological data such as heart rate,
-            respiration rate, and blood oxygen levels may be used to detect
-            infectious diseases prior to symptom onset. Vito uses this data to
+            Evidence suggests that physiological data such as heart rate,
+            respiration rate, and blood oxygen levels may detect
+            infectious diseases in realtime. Vito uses this data to
             notify users and allow them to take appropriate precautions.
           </p>
           <p>
@@ -27,7 +27,7 @@ function AboutSection() {
           </p>
           <p>
             We believe that your health data should be yours, which is why all
-            data processing is done on-device. Vito is also open source, so
+            data processing is done on-device. Vito is open sourced, so
             anyone can view the code or contribute, which means no secret data
             logging or aggregation.
           </p>

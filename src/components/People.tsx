@@ -3,6 +3,7 @@ import Footer from "./Footer";
 import Landing from "./Landing";
 import "./people.scss";
 import SectionContainer from "./SectionContainer";
+import DrK from "../res/DrK.png";
 
 function People() {
   return (
@@ -38,11 +39,22 @@ function People() {
               />
               <h3 className="people-feature-header">Andreas Ink</h3>
               <caption className="people-feature-caption">
-                Founded Vito to hopefully prevent the spread of infection that
-                led to his Aunt's death.  Works on most repositories of Vito, primarily with app development and data analysis.
+                Founder of Vito, works on most repositories, primarily with app development and data analysis.
               </caption>
             </div>
-           
+
+            <div className="people-feature-cell">
+              <img
+                className="people-feature-img"
+                alt="Andreas's Profile Pic"
+                src={DrK}
+              />
+              <h3 className="people-feature-header">Dr.Kahanda</h3>
+              <caption className="people-feature-caption">
+                Ph.D., Computer Science, mentoring members of Vito through the research process
+              </caption>
+
+            </div>
             <div className="people-feature-cell">
               <img
                 className="people-feature-img"
@@ -53,10 +65,10 @@ function People() {
               <caption className="people-feature-caption">
                 Leads web development with Vito, pursing a CS degree at UNF
               </caption>
-           
-          </div>
 
-          <div className="people-feature-cell">
+            </div>
+
+            <div className="people-feature-cell">
               <img
                 className="people-feature-img"
                 alt="Andreas's Profile Pic"
@@ -64,13 +76,13 @@ function People() {
               />
               <h3 className="people-feature-header">Ethan Cloin</h3>
               <caption className="people-feature-caption">
-              B.S. in Computer Science, furthering a web development skill set, assists with data analysis
+                B.S. in Computer Science, furthering a web development skill set, assists with data analysis
               </caption>
-           
+
+            </div>
+
           </div>
-          
-          </div>
-          
+
         </div>
         <Footer />
       </SectionContainer>
