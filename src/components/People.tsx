@@ -63,7 +63,7 @@ function People() {
               />
               <h3 className="people-feature-header">Ricky LeDew</h3>
               <caption className="people-feature-caption">
-                Leads web development with Vito, pursing a CS degree at UNF
+                Leads web development with Vito, pursuing a CS degree at UNF
               </caption>
 
             </div>
