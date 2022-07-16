@@ -3,8 +3,6 @@ import { NavLink } from "react-router-dom";
 
 import "./navbar.scss";
 
-const restoreScroll = () => window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
-
 function Navbar() {
   const navbarRef = useRef<HTMLElement>(null);
   return (
@@ -15,13 +13,13 @@ function Navbar() {
       <div className="nav-gradient" />
       <div className="nav-links" id="nav-links">
         <div className="nav-item">
-          <NavLink to="/" onClick={restoreScroll}>Home</NavLink>
+          <NavLink to="/">Home</NavLink>
         </div>
         <div className="nav-item">
-          <NavLink to="/people" onClick={restoreScroll}>Contributors</NavLink>
+          <NavLink to="/people">Contributors</NavLink>
         </div>
         <div className="nav-item">
-          <NavLink to="/blog" onClick={restoreScroll}>Blog</NavLink>
+          <NavLink to="/blog">Blog</NavLink>
         </div>
         <div className="nav-btn-div">
           <a

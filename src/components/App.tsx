@@ -1,4 +1,10 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { useEffect } from "react";
+import {
+  BrowserRouter,
+  Routes,
+  Route,
+  useLocation
+} from "react-router-dom";
 import Navbar from "./Navbar";
 import ComingSoon from "./ComingSoon";
 import People from "./People";
@@ -10,9 +16,20 @@ import BlogIndex from "./Blog/BlogIndex";
 import BlogFeed from "./Blog/BlogFeed";
 import BlogPostPage from "./Blog/BlogPostPage";
 
+function ScrollToTop() {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+  }, [pathname]);
+
+  return null;
+}
+
 function App() {
   return (
     <BrowserRouter>
+      <ScrollToTop />
       <Navbar />
       <div className="gradient" />
       <Routes>
