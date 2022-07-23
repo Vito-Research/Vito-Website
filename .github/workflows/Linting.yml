@@ -1,9 +1,15 @@
+#################################################################################################
+# Beginning of the YML file                                                                     #
+# documentation can be found here: https://yaml.org/spec/1.2.2/#chapter-1-introduction-to-yaml) #
+#################################################################################################
+--- 
+
 name: Super-Linting Vito Website
 on:
   push:
-    branches: [ CICD-TEST ]
+    branches: [CICD-TEST]
   pull_request:
-    branches: [ CICD-TEST ]
+    branches: [CICD-TEST]
     
 
 
@@ -21,12 +27,21 @@ jobs:
         uses: actions/checkout@v3
         with:
           fetch-depth: 0
+      ######################################
+      # Run Super-Linter against code base #
+      ######################################
       - name: Super-Linter
-        uses: github/super-linter@v4.9.4    #calling the Super-Linter to scan through code for errors
-      - run:
-         echo "//////////////////////////////LINTING HAS COMPLETED!//////////////////////////////"    #Once linting has completed run this simple message for error completion and visibility 
-        env: 
+        uses: github/super-linter@v4.9.4    #calling the Super-Linter to scan through code for errors 
+        env:
           VALIDATE_ALL_CODEBASE: false
           DEFAULT_BRANCH: CICD-TEST
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      ############################################
+      # Run stylelint against code base for scss #
+      ############################################
+      - name: stylelint ##added for scss checking 
+        uses: actions-hub/stylelint@master
+        env:
+          INDENT_SPACES: 4
+          PATTERN: "*.scss"
         
