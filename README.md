@@ -21,5 +21,4 @@
   - Create a pull request for the new feature.
 
 
-[![.github/workflows/Linting.yml](https://github.com/Vito-Research/Vito-Website/Build%20and%20Test/workflows//badge.svg)](https://github.com/Vito-Research/Vito-Website/actions/workflows/Linting.yml)
-
+[![.github/workflows/Linting.yml](https://github.com/Vito-Research/Vito-Website/actions/workflows/Build%20and%20Test/badge.svg?branch=CICD-TEST)](https://github.com/Vito-Research/Vito-Website/actions/workflows/Linting.yml)
