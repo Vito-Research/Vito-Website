@@ -19,3 +19,6 @@
   - Once you're done making changes (please test them first) do `npm run lint` to lint your code
   - After all lint errors have been fixed, push your changes.
   - Create a pull request for the new feature.
+  
+  
+  [![.github/workflows/Linting.yml](https://github.com/Vito-Research/Vito-Website/actions/workflows/Linting.yml/badge.svg)](https://github.com/Vito-Research/Vito-Website/actions/workflows/Linting.yml)
