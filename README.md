@@ -20,4 +20,6 @@
   - After all lint errors have been fixed, push your changes.
   - Create a pull request for the new feature.
 
-![Super-Linting Vito Website](https://github.com/Vito-Rearch/Vito-Website/actions/workflows/Linting.yml/badge.svg)
+
+
+[![Actions Status](https://github.com/Vito-Research/Vito-Website/workflows/Build%20and%20Test/badge.svg)(https://github.com/Vito-Research/Vito-Website/actions)
