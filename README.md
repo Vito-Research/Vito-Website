@@ -19,3 +19,4 @@
   - Once you're done making changes (please test them first) do `npm run lint` to lint your code
   - After all lint errors have been fixed, push your changes.
   - Create a pull request for the new feature.
+[![GitHub Super-Linter](https://github.com/<OWNER>/<REPOSITORY>/workflows/Lint%20Code%20Base/badge.svg)](https://github.com/marketplace/actions/super-linter)
