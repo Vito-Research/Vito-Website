@@ -22,4 +22,4 @@
 
 
 
-![Actions Status](https://github.com/Vito-Research/Vito-Website/workflows/Linting.yml/badge.svg)(https://github.com/Vito-Research/Vito-Website/actions)
+![Actions Status](https://github.com/Vito-Research/Vito-Website /workflows/Linting.yml/badge.svg)(https://github.com/Vito-Research/Vito-Website/actions)
