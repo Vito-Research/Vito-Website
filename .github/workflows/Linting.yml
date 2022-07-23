@@ -1,0 +1,32 @@
+name: Super-Linting Vito Website
+on:
+  push:
+    branches: [ CI/CD-TEST ]
+  pull_request:
+    branches: [ CI/CD-TEST ]
+    
+
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    
+    #strategy:
+      #matrix:
+        #swift versions
+   
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+      - name: Super-Linter
+        uses: github/super-linter@v4.9.4    #calling the Super-Linter to scan through code for errors
+      - run:
+         echo "//////////////////////////////LINTING HAS COMPLETED!//////////////////////////////"    #Once linting has completed run this simple message for error completion and visibility 
+        env: 
+          VALIDATE_ALL_CODEBASE: false
+          DEFAULT_BRANCH: CI/CD-TEST
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        
