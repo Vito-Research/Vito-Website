@@ -1,9 +1,9 @@
 name: Super-Linting Vito Website
 on:
   push:
-    branches: [ CI/CD-TEST ]
+    branches: [ CICD-TEST ]
   pull_request:
-    branches: [ CI/CD-TEST ]
+    branches: [ CICD-TEST ]
     
 
 
@@ -27,6 +27,6 @@ jobs:
          echo "//////////////////////////////LINTING HAS COMPLETED!//////////////////////////////"    #Once linting has completed run this simple message for error completion and visibility 
         env: 
           VALIDATE_ALL_CODEBASE: false
-          DEFAULT_BRANCH: CI/CD-TEST
+          DEFAULT_BRANCH: CICD-TEST
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         
