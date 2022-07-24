@@ -18,6 +18,7 @@ on:
 jobs:
   check:
     runs-on: ubuntu-latest
+    if: github.respository == 'CICD-TEST'
     
     #strategy:
       #matrix:
