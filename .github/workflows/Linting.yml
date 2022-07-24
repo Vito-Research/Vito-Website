@@ -36,7 +36,7 @@ jobs:
       #calling the Super-Linter slimv4 to exclude rust,dotenv,armttk,pwsh,and c# linters
         uses: github/super-linter/slim@v4     
         env:
-          LINTER_RULES_PATH: /RULES
+          LINTER_RULES_PATH: Vito-Website/RULES
           VALIDATE_ALL_CODEBASE: true ####set this to true if you want to test your entire code base even if there are not changes, or false if not
           DEFAULT_BRANCH: CICD-TEST
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -58,6 +58,7 @@ jobs:
           VALIDATE_POWERSHELL: false
           VALIDATE_PROTOBUF: false
           #################################################
-          CSS_FILE_NAME: .stylelintrc.json #use our rules for linting scss
+          CSS_FILE_NAME: RULES/.stylelintrc.json #use our rules for linting scss
+          VALIDATE_CSS: true
 
         
