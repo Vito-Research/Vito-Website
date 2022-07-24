@@ -3,7 +3,7 @@
 # documentation can be found here: https://yaml.org/spec/1.2.2/#chapter-1-introduction-to-yaml) #
 #################################################################################################
 
-name: VitoCI
+name: .scss test
 on:
   workflow_dispatch: #allows you use run the workflow manually in github actions
   
