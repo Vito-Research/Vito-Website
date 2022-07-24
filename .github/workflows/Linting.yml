@@ -35,7 +35,7 @@ jobs:
       - name: Super-Linter
         uses: github/super-linter@v4.9.4    #calling the Super-Linter to scan through code for errors 
         env:
-          VALIDATE_ALL_CODEBASE: false
+          VALIDATE_ALL_CODEBASE: true ####set this to true if you want to test your entire code base even if there are not changes, or false if not
           DEFAULT_BRANCH: CICD-TEST
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       ############################################
