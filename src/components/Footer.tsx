@@ -76,7 +76,7 @@ function Footer({ children }: PropsWithChildren<{}>) {
           </Link>
         </p>
         <p>
-          <a className="footer-text" href="mailto:andreasink17@gmail.com">
+          <a className="footer-text" href="mailto:andreas@vitovitals.org">
             Contact
           </a>
         </p>

@@ -28,11 +28,11 @@ function StatsSection() {
           </h3>
           <p className="stats-feature-caption">
             Vito's base algorithm, NightSignal, in a research setting found that
-            77% of cases were detectable prior or to or during visible symptom
+            77% of cases were detectable prior or during visible symptom
             onset
           </p>
         </div>
-        <div className="stats-feature-cell">
+        {/* <div className="stats-feature-cell">
           <h1>
             <strong>58%</strong>
           </h1>
@@ -42,7 +42,7 @@ function StatsSection() {
             several days of data), Vito has improved algorithmic efficiency.
             (2.5 minutes for 3 months of data)
           </p>
-        </div>
+        </div> */}
       </div>
 
       <div className="stats-feature">
@@ -64,7 +64,7 @@ function StatsSection() {
           <h3 className="stats-feature-header">Months of Contributions</h3>
           <p className="stats-feature-caption">
             Vito has consistently been developed over the past year and we plan
-            to keep contributing an making Vito the best it can be
+            to keep contributing and making Vito the best it can be
           </p>
         </div>
       </div>

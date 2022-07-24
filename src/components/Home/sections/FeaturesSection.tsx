@@ -41,7 +41,7 @@ function FeaturesSection() {
               <p className="feature-caption">
                 Our super-efficient algorithm to detect infection can process
                 months worth of data quickly, reducing the time you need to wait
-                to see your results.
+                to see your stress events.
               </p>
             </div>
           </div>
