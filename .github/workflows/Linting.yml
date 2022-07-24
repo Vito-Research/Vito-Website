@@ -43,7 +43,6 @@ jobs:
           VALIDATE_ANSIBLE: false
           VALIDATE_ARM: false
           VALIDATE_BASH: false
-          VALIDATE_CSS: true
           VALIDATE_BASH_EXEC: false #validation of bash executables turned off
           VALIDATE_CPP: false #validation of c++ language turn off
           CSS_FILE_NAME: .stylelintrc.json
