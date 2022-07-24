@@ -39,6 +39,11 @@ jobs:
           VALIDATE_ALL_CODEBASE: true ####set this to true if you want to test your entire code base even if there are not changes, or false if not
           DEFAULT_BRANCH: CICD-TEST
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          VALIDATE_ANSIBLE: false
+          VALIDATE_ARM: false
+          VALIDATE_BASH: false
+          VALIDATE_BASH_EXEC: false #validation of bash executables turned off
+          VALIDATE_CPP: false #validation of c++ language turn off
       ############################################
       # Run stylelint against code base for scss #
       ############################################
