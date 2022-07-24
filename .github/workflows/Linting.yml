@@ -50,8 +50,8 @@ jobs:
       
       - name: stylelint for checking scss ##added for scss checking 
         uses: actions-hub/stylelint@master
-        env:
-          PATTERN: "**/*.scss"
+        env: 
+          PATTERN: "**/*.scss, *.scss"
           INDENT_SPACES: 4
 
         
