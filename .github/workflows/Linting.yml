@@ -46,10 +46,8 @@ jobs:
      #     VALIDATE_CPP: false #validation of c++ language turn off
       ############################################
       # Run stylelint against code base for scss #
-      ############################################
+      ###########################################
+      
       - name: stylelint for checking scss ##added for scss checking 
         uses: actions-hub/stylelint@master
-        env:
-          INDENT_SPACES: 4
-          PATTERN: ".scss"
         
