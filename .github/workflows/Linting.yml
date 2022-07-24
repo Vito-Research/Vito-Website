@@ -58,7 +58,7 @@ jobs:
           VALIDATE_POWERSHELL: false
           VALIDATE_PROTOBUF: false
           #################################################
-          CSS_FILE_NAME: RULES/.stylelintrc.json #use our rules for linting scss
+          CSS_FILE_NAME: .stylelintrc.json #use our rules for linting scss
           
 
         
