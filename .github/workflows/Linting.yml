@@ -40,11 +40,24 @@ jobs:
           VALIDATE_ALL_CODEBASE: true ####set this to true if you want to test your entire code base even if there are not changes, or false if not
           DEFAULT_BRANCH: CICD-TEST
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      #################################################
+      # Remove linters where languages are not in use #
+      #################################################
           VALIDATE_ANSIBLE: false
           VALIDATE_ARM: false
           VALIDATE_BASH: false
-          VALIDATE_BASH_EXEC: false #validation of bash executables turned off
-          VALIDATE_CPP: false #validation of c++ language turn off
-          CSS_FILE_NAME: .stylelintrc.json
+          VALIDATE_CLANG_FORMAT: false
+          VALIDATE_CLOJURE: false
+          VALIDATE_CLOUDFORMATION: false
+          VALIDATE_DART: false
+          VALIDATE_GO: false
+          VALIDATE_GOOGLE_JAVA_FORMAT: false
+          VALIDATE_GROOVY: false
+          VALIDATE_KUBERNETES_KUBEVAL: false
+          VALIDATE_PERL: false
+          VALIDATE_POWERSHELL: false
+          VALIDATE_PROTOBUF: false
+          #################################################
+          CSS_FILE_NAME: .stylelintrc.json #use our rules for linting scss
 
         
