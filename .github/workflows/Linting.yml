@@ -8,9 +8,9 @@ on:
   workflow_dispatch: #allows you use run the workflow manually in github actions
   
   push:
-    branches: [main,CICD-TEST]
+    branches: [CICD-TEST]
   pull_request:
-    branches: [main,CICD-TEST]
+    branches: [CICD-TEST]
 
     
 
