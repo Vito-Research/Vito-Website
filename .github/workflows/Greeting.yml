@@ -5,7 +5,7 @@
 #################################################################################################
 name: Greetings First Timers
 
-on: [pull_request,issues,push]
+on: [pull_request,issues]
 
 jobs:
   Greeting-User:
@@ -18,5 +18,5 @@ jobs:
       with:
         repo-token: ${{ secrets.GITHUB_TOKEN }}
         issue-message: "‘${{ github.actor }}’ this is your first issue!"
-        pr-message: "‘${{ github.actor }}’, this is your first pull request with Vito!"
+        pr-message: "‘${{ github.actor }}’, this is your first pull request with Vito! Please check out our discord here https://discord.gg/B7RmQVJ4qr"
 
