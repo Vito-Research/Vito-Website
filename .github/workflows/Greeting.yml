@@ -1,1 +1,22 @@
+#################################################################################################
+# Beginning of the YML file                                                                     #
+# documentation can be found here: https://yaml.org/spec/1.2.2/#chapter-1-introduction-to-yaml) #
+# This greets a first time user when pull, issues, or pushing to the repo                       #
+#################################################################################################
+name: Greetings First Time Issue/Pull Request
+
+on: [pull_request,issues,push]
+
+jobs:
+  Greeting-User:
+    runs-on: ubuntu-latest
+    permissions:
+      issues: write
+      pull-requests: write
+    steps:
+    - uses: actions/first-interaction@v1
+      with:
+        repo-token: ${{ secrets.GITHUB_TOKEN }}
+        issue-message: "‘${{ github.actor }}’ this is your first issue!"
+        pr-message: "‘${{ github.actor }}’, this is your first pull request with Vito!"
 
