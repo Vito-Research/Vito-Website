@@ -2,7 +2,7 @@
 # Beginning of the YML file                                                                     #
 # documentation can be found here: https://yaml.org/spec/1.2.2/#chapter-1-introduction-to-yaml) #
 #################################################################################################
-name: VitoCI   #name of workflow as it will appear in Actions
+name: VitoCI #name of workflow as it will appear in Actions
 on:
   workflow_dispatch: #allows you use run the workflow manually in github actions
   #push:
@@ -10,7 +10,7 @@ on:
   #pull_request:
   #  branches: [CICD-TEST]
 ######################################
-#    Set Permissions for the token   #   
+#    Set Permissions for the token   #
 ######################################
 #More information found here: --> https://docs.github.com/en/actions/security-guides/automatic-token-authentication#permissions-for-the-github_token
 permissions:
@@ -26,12 +26,9 @@ permissions:
   #security-events: read
   statuses: write
 
-    
-
-
 jobs:
   Linting: #name this whatever you want the job id to be called
-    name: Job-1  #this is what will appear as the job name in Actions workflow, this can be named anything you want
+    name: Job-1 #this is what will appear as the job name in Actions workflow, this can be named anything you want
     runs-on: ubuntu-latest
 
     steps:
@@ -39,24 +36,24 @@ jobs:
       # Checkout code for the VM checking your repo   #
       #################################################
       - name: Checkout Code
-        uses: actions/checkout@2541b1294d2704b0964813337f33b291d3f8596b #using the SHA value for added security, found in set up job step 
+        uses: actions/checkout@2541b1294d2704b0964813337f33b291d3f8596b #using the SHA value for added security, found in set up job step
         with:
           fetch-depth: 0
       ######################################
       # Run Super-Linter against code base #
       ######################################
       - name: Super-Linter Slimv4
-      #calling the Super-Linter slimv4 to exclude rust,dotenv,armttk,pwsh,and c# linters
-        uses: github/super-linter/slim@2d64ac1c067c34beaf7d24cc12733cd46236f76e #using the SHA value for added security, found in set up job step  
+        #calling the Super-Linter slimv4 to exclude rust,dotenv,armttk,pwsh,and c# linters
+        uses: github/super-linter/slim@2d64ac1c067c34beaf7d24cc12733cd46236f76e #using the SHA value for added security, found in set up job step
         env:
-          LINTER_RULES_PATH: /RULES
+          LINTER_RULES_PATH: /
           VALIDATE_ALL_CODEBASE: true ####set this to true if you want to test your entire code base even if there are not changes, or false if not
           DEFAULT_BRANCH: CICD-TEST
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           #ACTIONS_RUNNER_DEBUG: true   #in case of needing to debug issues with runner
-      ###################################################
-      # Omit languages you dont want the linter to lint #
-      ###################################################
+          ###################################################
+          # Omit languages you dont want the linter to lint #
+          ###################################################
           #VALIDATE_ANSIBLE: false
           #VALIDATE_ARM: false
           #VALIDATE_BASH: false
@@ -79,11 +76,9 @@ jobs:
           #VALIDATE_JAVASCRIPT_ESL: false
           #VALIDATE_JAVASCRIPT_STANDARD: false
           #VALIDATE_JAVA: false
-        ################################################### 
-        # Rules for your linters in Super Linter          #
-        ###################################################
+          ###################################################
+          # Rules for your linters in Super Linter          #
+          ###################################################
           CSS_FILE_NAME: .stylelintrc.json #use our rules for linting scss
-          
-          
-
-        
+          TYPESCRIPT_ES_CONFIG_FILE: .eslintrc.json
+          TYPESCRIPT_STANDARD_TSCONFIG_FILE: tsconfig.json
