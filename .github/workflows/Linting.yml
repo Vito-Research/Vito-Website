@@ -2,7 +2,7 @@
 # Beginning of the YML file                                                                     #
 # documentation can be found here: https://yaml.org/spec/1.2.2/#chapter-1-introduction-to-yaml) #
 #################################################################################################
-name: VitoCI
+name: VitoCI   #name of workflow as it will appear in Actions
 on:
   workflow_dispatch: #allows you use run the workflow manually in github actions
   #push:
@@ -30,7 +30,8 @@ permissions:
 
 
 jobs:
-  build:
+  Linting: #name this whatever you want the job id to be called
+    name: Job-1  #this is what will appear as the job name in Actions
     runs-on: ubuntu-latest
 
     steps:
