@@ -3,12 +3,11 @@
 # documentation can be found here: https://yaml.org/spec/1.2.2/#chapter-1-introduction-to-yaml) #
 #################################################################################################
 name: VitoCI #name of workflow as it will appear in Actions
-on:
+on:  
   workflow_dispatch: #allows you use run the workflow manually in github actions
-  #push:
-  #  branches: [CICD-TEST]
-  #pull_request:
-  #  branches: [CICD-TEST]
+  push:
+  pull_request:
+  
 ######################################
 #    Set Permissions for the token   #
 ######################################
