@@ -49,7 +49,7 @@ jobs:
           VALIDATE_ALL_CODEBASE: true ####set this to true if you want to test your entire code base even if there are not changes, or false if not
           DEFAULT_BRANCH: CICD-TEST
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          ACTIONS_RUNNER_DEBUG: true
+          #ACTIONS_RUNNER_DEBUG: true   #in case of needing to debug issues with runner
       #################################################
       # Remove linters where languages are not in use #
       #################################################
