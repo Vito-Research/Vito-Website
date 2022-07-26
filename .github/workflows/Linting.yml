@@ -14,7 +14,7 @@ permissions:
   checks: read
   contents: read
   deployments: read
-  id-token: read
+  #id-token: read
   issues: read
   #metadata: read set to read by default
   packages: read
