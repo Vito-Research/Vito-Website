@@ -3,11 +3,12 @@
 # documentation can be found here: https://yaml.org/spec/1.2.2/#chapter-1-introduction-to-yaml) #
 #################################################################################################
 name: VitoCI #name of workflow as it will appear in Actions
-on:  
+on:
   workflow_dispatch: #allows you use run the workflow manually in github actions
   push:
+    branches: [main,CICD-TEST]
   pull_request:
-  
+    branches: [main,CICD-TEST]
 ######################################
 #    Set Permissions for the token   #
 ######################################
@@ -48,7 +49,7 @@ jobs:
         uses: github/super-linter/slim@2d64ac1c067c34beaf7d24cc12733cd46236f76e #using the SHA value for added security, found in set up job step
         env:
           LINTER_RULES_PATH: /
-          VALIDATE_ALL_CODEBASE: true ####set this to true if you want to test your entire code base even if there are not changes, or false if not
+          VALIDATE_ALL_CODEBASE: false ####set this to true if you want to test your entire code base even if there are not changes, or false if not
           DEFAULT_BRANCH: CICD-TEST
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           #ACTIONS_RUNNER_DEBUG: true   #in case of needing to debug issues with runner
