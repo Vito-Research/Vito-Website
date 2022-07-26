@@ -31,7 +31,7 @@ permissions:
 
 jobs:
   Linting: #name this whatever you want the job id to be called
-    name: Job-1  #this is what will appear as the job name in Actions
+    name: Job-1  #this is what will appear as the job name in Actions workflow, this can be named anything you want
     runs-on: ubuntu-latest
 
     steps:
@@ -54,9 +54,9 @@ jobs:
           DEFAULT_BRANCH: CICD-TEST
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           #ACTIONS_RUNNER_DEBUG: true   #in case of needing to debug issues with runner
-      #################################################
-      # Remove linters where languages are not in use #
-      #################################################
+      ###################################################
+      # Omit languages you dont want the linter to lint #
+      ###################################################
           #VALIDATE_ANSIBLE: false
           #VALIDATE_ARM: false
           #VALIDATE_BASH: false
@@ -71,7 +71,15 @@ jobs:
           #VALIDATE_PERL: false
           #VALIDATE_POWERSHELL: false
           #VALIDATE_PROTOBUF: false
-          #################################################
+          #VALIDATE_TYPESCRIPT_ES: false
+          #VALIDATE_TYPESCRIPT_STANDARD: false
+          #VALIDATE_CSS: false
+          #VALIDATE_YAML: false
+          #VALIDATE_KOTLIN: false
+          #VALIDATE_JAVASCRIPT_ESL: false
+          #VALIDATE_JAVASCRIPT_STANDARD: false
+          #VALIDATE_JAVA: false
+        #################################################
           CSS_FILE_NAME: .stylelintrc.json #use our rules for linting scss
           
 
