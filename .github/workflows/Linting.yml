@@ -5,6 +5,24 @@
 name: VitoCI
 on:
   workflow_dispatch: #allows you use run the workflow manually in github actions
+######################################
+#    Set Permissions for the token   #   
+######################################
+#More information found here --> https://docs.github.com/en/actions/security-guides/automatic-token-authentication#permissions-for-the-github_token
+permissions:
+  actions: read
+  checks: read
+  contents: read
+  deployments: read
+  id-token: read
+  issues: read
+  #metadata: read set to read by default
+  packages: read
+  pages: read
+  pull-requests: read
+  repository-projects: read
+  security-events: read
+  statuses: read
   
   #push:
   #  branches: [CICD-TEST]
@@ -17,28 +35,6 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    ######################################
-    #    Set Permissions for the token   #   
-    ######################################
-    #More information found here --> https://docs.github.com/en/actions/security-guides/automatic-token-authentication#permissions-for-the-github_token
-    #permissions:
-    #  actions: read
-    #  checks: read
-    #  contents: read
-    #  deployments: read
-    #  id-token: read
-    #  issues: read
-     # metadata: read set to read by default
-    #  packages: read
-    #  pages: read
-    #  pull-requests: read
-    #  repository-projects: read
-    #  security-events: read
-    #  statuses: read
-    #strategy:
-      #matrix:
-        #swift versions
-   
 
     steps:
       - name: Checkout Code
@@ -50,7 +46,7 @@ jobs:
       ######################################
       - name: Super-Linter Slimv4
       #calling the Super-Linter slimv4 to exclude rust,dotenv,armttk,pwsh,and c# linters
-      - uses: github/super-linter/slim@v4     
+        uses: github/super-linter/slim@v4
         env:
           LINTER_RULES_PATH: /RULES
           VALIDATE_ALL_CODEBASE: false ####set this to true if you want to test your entire code base even if there are not changes, or false if not
