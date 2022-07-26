@@ -5,7 +5,10 @@
 #################################################################################################
 name: Greetings First Timers
 
-on: [pull_request,issues]
+on:
+  workflow_dispatch: #allows you use run the workflow manually in github actions
+  pull_request:
+  issues:
 
 jobs:
   Greeting-User:
