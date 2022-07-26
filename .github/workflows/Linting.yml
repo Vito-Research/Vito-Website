@@ -14,19 +14,17 @@ on:
 ######################################
 #More information found here --> https://docs.github.com/en/actions/security-guides/automatic-token-authentication#permissions-for-the-github_token
 permissions:
-  actions: read
-  checks: read
   contents: read
-  deployments: read
+  #deployments: read
   #id-token: read
-  issues: read
+  #issues: read
   #metadata: read set to read by default
-  packages: read
-  pages: read
-  pull-requests: read
-  repository-projects: read
-  security-events: read
-  statuses: read
+  #packages: read
+  #pages: read
+  #pull-requests: read
+  #repository-projects: read
+  #security-events: read
+  #statuses: read
 
     
 
