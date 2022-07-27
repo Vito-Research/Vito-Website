@@ -21,5 +21,5 @@ jobs:
       with:
         repo-token: ${{ secrets.GITHUB_TOKEN }}
         issue-message: "‘${{ github.actor }}’ this is your first issue!"
-        pr-message: "‘${{ github.actor }}’, this is your first pull request with Vito! Please check out our discord here https://discord.gg/B7RmQVJ4qr"
+        pr-message: "${{ github.actor }}, this is your first pull request with Vito! Please check out our discord here https://discord.gg/B7RmQVJ4qr"
 
