@@ -78,6 +78,7 @@ jobs:
           #VALIDATE_JAVASCRIPT_ESL: false
           #VALIDATE_JAVASCRIPT_STANDARD: false
           #VALIDATE_JAVA: false
+          VALIDATE_YAML: false;
           ###################################################
           # Rules for your linters in Super Linter          #
           ###################################################
