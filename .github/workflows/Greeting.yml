@@ -20,6 +20,6 @@ jobs:
     - uses: actions/first-interaction@bd33205aa5c96838e10fd65df0d01efd613677c1
       with:
         repo-token: ${{ secrets.GITHUB_TOKEN }}
-        issue-message: "‘${{ github.actor }}’ this is your first issue!"
+        issue-message: "‘${{ github.actor }}’ this is your first issue! Please check out our [Discord]!(https://discord.gg/B7RmQVJ4qr)"
         pr-message: "${{ github.actor }}, this is your first pull request with Vito!:grinning::100: Please check out our [Discord]!(https://discord.gg/B7RmQVJ4qr)"
 
