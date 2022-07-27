@@ -5,10 +5,10 @@
 name: VitoCI #name of workflow as it will appear in Actions
 on:
   workflow_dispatch: #allows you use run the workflow manually in github actions
-  push:
-    branches: [main,CICD-TEST]
-  pull_request:
-    branches: [main,CICD-TEST]
+  #push:
+  #branches: [main,CICD-TEST]
+  #pull_request:
+    #branches: [main,CICD-TEST]
 ######################################
 #    Set Permissions for the token   #
 ######################################
