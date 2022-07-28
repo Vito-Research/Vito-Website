@@ -2,7 +2,7 @@
   "applinks": {
       "details": [
            {
-             "appIDs": [ "com.Ai.Vito" ],
+             "appIDs": [ "com.Ai.Vito"],
              "components": [
                {
                   "#": "no_universal_links",
