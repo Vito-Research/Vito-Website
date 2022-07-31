@@ -31,7 +31,7 @@ jobs:
 # Check Status of Github, which must pass before Linting can run   #
 ####################################################################
   Check_Github_Status:
-    name: Job-1
+    name: Check Github Status
     runs-on: ubuntu-latest
     steps:
       - name: Check Github Status
@@ -39,7 +39,7 @@ jobs:
     
   Linting: #name this whatever you want the job id to be called
     needs: Check_Github_Status #needs Job-1 to pass before running
-    name: Job-2 #this is what will appear as the job name in Actions workflow, this can be named anything you want
+    name: Super Linter #this is what will appear as the job name in Actions workflow, this can be named anything you want
     runs-on: ubuntu-latest
 
     steps:
