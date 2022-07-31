@@ -35,7 +35,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Check Github Status
-        uses: crazy-max/ghaction-github-status@v3
+        uses: crazy-max/ghaction-github-status@11800cf081427ec689e7f34f287f9e0c85ae6826
     
   Linting: #name this whatever you want the job id to be called
     needs: Check_Github_Status #needs Job-1 to pass before running
