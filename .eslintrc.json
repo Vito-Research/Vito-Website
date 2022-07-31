@@ -14,6 +14,7 @@
   },
   "plugins": ["react", "@typescript-eslint"],
   "rules": {
+    "no-use-before-define": "off",
     "react/react-in-jsx-scope": "off",
     "react/jsx-filename-extension": ["warn", { "extensions": [".tsx"] }],
     "react/jsx-one-expression-per-line": "off",
