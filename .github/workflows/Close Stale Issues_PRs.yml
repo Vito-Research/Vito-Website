@@ -1,5 +1,6 @@
 name: 'Close stale issues and PRs'
 on:
+  workflow_dispatch:
   schedule:
   - cron: '0 0 1 */2 *' #run every 2 months at Midnight first day of the month (https://crontab.guru/#0_0_1_*/2_*)
      
