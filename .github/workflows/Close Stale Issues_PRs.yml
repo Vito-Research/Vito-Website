@@ -25,7 +25,7 @@ jobs:
   stale:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/stale@v5
+      - uses: actions/stale@9c1b1c6e115ca2af09755448e0dbba24e5061cc8
         with:
           stale-issue-message: 'Your issue is over 60 days old. Closing issue.'
           stale-pr-message: 'Please comment on this PR, it is over 60 days old. This will close if no comment is submitted.'
