@@ -4,6 +4,7 @@
 #################################################################################################
 name: Linting #name of workflow as it will appear in Actions
 on:
+  workflow_call:
   workflow_dispatch: #allows you use run the workflow manually in github actions
   push:
    branches: [main,CICD-TEST]
