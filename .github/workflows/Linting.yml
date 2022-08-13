@@ -51,6 +51,7 @@ jobs:
         uses: actions/checkout@2541b1294d2704b0964813337f33b291d3f8596b #using the SHA value for added security, found in set up job step
         with:
           fetch-depth: 0
+        if: github.repository == 'Vito-Research/Vito-Website' #check to see if this is the Vito-Website Repo first, if not, skip npm install
       - name: npm install
         run: npm install
       ######################################
