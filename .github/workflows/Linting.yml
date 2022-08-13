@@ -94,7 +94,9 @@ jobs:
           VALIDATE_YAML: false;
           ###################################################
           # Rules for your linters in Super Linter          #
-          ###################################################
+          ##################################################
+          if: ${{ github.repository == 'Vito-Research/Vito-Website' }}
           CSS_FILE_NAME: .stylelintrc.json #use our rules for linting scss
           TYPESCRIPT_ES_CONFIG_FILE: .eslintrc.json
           TYPESCRIPT_STANDARD_TSCONFIG_FILE: tsconfig.json
+          
