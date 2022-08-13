@@ -94,6 +94,7 @@ jobs:
           ###################################################
           # Rules for your linters in Super Linter          #
           ###################################################
+          if: ${{ github.repository == 'Vito-Research/Vito-Website' }} #check to see if this is the Vito-Website Repo first, if not, skip npm install
           CSS_FILE_NAME: .stylelintrc.json
           TYPESCRIPT_ES_CONFIG_FILE: .eslintrc.json
           TYPESCRIPT_STANDARD_TSCONFIG_FILE: tsconfig.json
