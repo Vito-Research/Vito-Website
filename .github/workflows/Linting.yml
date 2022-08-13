@@ -54,16 +54,15 @@ jobs:
       - if: ${{ github.repository == 'Vito-Research/Vito-Website' }} #check to see if this is the Vito-Website Repo first, if not, skip npm install
         name: npm install
         run: npm install
-      ######################################
-      # Run Super-Linter against code base #
-      ######################################
+      ###########################################
+      # Run Super-Linter Slim against code base #
+      ###########################################
       - name: Super-Linter Slimv4
         #calling the Super-Linter slimv4 to exclude rust,dotenv,armttk,pwsh,and c# linters
         uses: github/super-linter/slim@2d64ac1c067c34beaf7d24cc12733cd46236f76e #using the SHA value for added security, found in set up job step
-        env:
+      - env:
           LINTER_RULES_PATH: /
           VALIDATE_ALL_CODEBASE: true ####set this to true if you want to test your entire code base even if there are not changes, or false if not
-          DEFAULT_BRANCH: CICD-TEST
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           #ACTIONS_RUNNER_DEBUG: true   #in case of needing to debug issues with runner
           ###################################################
@@ -94,9 +93,10 @@ jobs:
           VALIDATE_YAML: false;
           ###################################################
           # Rules for your linters in Super Linter          #
-          ##################################################
-          if: ${{ github.repository == 'Vito-Research/Vito-Website' }}
-          CSS_FILE_NAME: .stylelintrc.json #use our rules for linting scss
+          ###################################################
+      - if: ${{ github.repository == 'Vito-Research/Vito-Website' }} #check to see if this is the Vito-Website Repo first, if not, skip npm install
+        env:
+          CSS_FILE_NAME: .stylelintrc.json
           TYPESCRIPT_ES_CONFIG_FILE: .eslintrc.json
           TYPESCRIPT_STANDARD_TSCONFIG_FILE: tsconfig.json
           
