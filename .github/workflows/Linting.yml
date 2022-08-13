@@ -99,7 +99,7 @@ jobs:
           TYPESCRIPT_ES_CONFIG_FILE: .eslintrc.json
           TYPESCRIPT_STANDARD_TSCONFIG_FILE: tsconfig.json
       
-      - if: ${{ github.repository != 'Vito-Research/Vito-Visualization' }} #check to see if this is the Vito-Website Repo first
+      - if: ${{ github.repository == 'Vito-Research/Vito-Visualization' }} #check to see if this is the Vito-Website Repo first
         name: Super-Linter Slimv4
         #calling the Super-Linter slimv4 to exclude rust,dotenv,armttk,pwsh,and c# linters
         uses: github/super-linter/slim@2d64ac1c067c34beaf7d24cc12733cd46236f76e #using the SHA value for added security, found in set up job step
