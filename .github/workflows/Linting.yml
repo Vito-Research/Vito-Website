@@ -57,7 +57,8 @@ jobs:
       ###########################################
       # Run Super-Linter Slim against code base #
       ###########################################
-      - name: Super-Linter Slimv4
+      - if: ${{ github.repository == 'Vito-Research/Vito-Website'}} #check to see if this is the Vito-Website Repo first
+        name: Super-Linter Slimv4
         #calling the Super-Linter slimv4 to exclude rust,dotenv,armttk,pwsh,and c# linters
         uses: github/super-linter/slim@2d64ac1c067c34beaf7d24cc12733cd46236f76e #using the SHA value for added security, found in set up job step
         env:
@@ -91,11 +92,49 @@ jobs:
           #VALIDATE_JAVASCRIPT_STANDARD: false
           #VALIDATE_JAVA: false
           VALIDATE_YAML: false;
-          if: ${{ github.repository == 'Vito-Research/Vito-Website' == 'true'}} #check to see if this is the Vito-Website Repo first
           ###################################################
           # Rules for your linters in Super Linter          #
           ###################################################
           CSS_FILE_NAME: .stylelintrc.json
           TYPESCRIPT_ES_CONFIG_FILE: .eslintrc.json
           TYPESCRIPT_STANDARD_TSCONFIG_FILE: tsconfig.json
-          
+      
+      - if: ${{ github.repository != 'Vito-Research/Vito-Visualization' }} #check to see if this is the Vito-Website Repo first
+        name: Super-Linter Slimv4
+        #calling the Super-Linter slimv4 to exclude rust,dotenv,armttk,pwsh,and c# linters
+        uses: github/super-linter/slim@2d64ac1c067c34beaf7d24cc12733cd46236f76e #using the SHA value for added security, found in set up job step
+        env:
+          LINTER_RULES_PATH: /
+          VALIDATE_ALL_CODEBASE: true #set this to true if you want to test your entire code base even if there are not changes, or false if not
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          #ACTIONS_RUNNER_DEBUG: true   #in case of needing to debug issues with runner
+          ###################################################
+          # Omit languages you dont want the linter to lint #
+          ###################################################
+          #VALIDATE_ANSIBLE: false
+          #VALIDATE_ARM: false
+          #VALIDATE_BASH: false
+          #VALIDATE_CLANG_FORMAT: false
+          #VALIDATE_CLOJURE: false
+          #VALIDATE_CLOUDFORMATION: false
+          #VALIDATE_DART: false
+          #VALIDATE_GO: false
+          #VALIDATE_GOOGLE_JAVA_FORMAT: false
+          #VALIDATE_GROOVY: false
+          #VALIDATE_KUBERNETES_KUBEVAL: false
+          #VALIDATE_PERL: false
+          #VALIDATE_POWERSHELL: false
+          #VALIDATE_PROTOBUF: false
+          #VALIDATE_TYPESCRIPT_ES: false
+          #VALIDATE_TYPESCRIPT_STANDARD: false
+          #VALIDATE_CSS: false
+          #VALIDATE_YAML: false
+          #VALIDATE_KOTLIN: false
+          #VALIDATE_JAVASCRIPT_ESL: false
+          #VALIDATE_JAVASCRIPT_STANDARD: false
+          #VALIDATE_JAVA: false
+          VALIDATE_YAML: false;
+          ###################################################
+          # Rules for your linters in Super Linter          #
+          ###################################################
+    
