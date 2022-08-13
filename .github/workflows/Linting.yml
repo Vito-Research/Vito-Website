@@ -60,7 +60,7 @@ jobs:
       - name: Super-Linter Slimv4
         #calling the Super-Linter slimv4 to exclude rust,dotenv,armttk,pwsh,and c# linters
         uses: github/super-linter/slim@2d64ac1c067c34beaf7d24cc12733cd46236f76e #using the SHA value for added security, found in set up job step
-      - env:
+        env:
           LINTER_RULES_PATH: /
           VALIDATE_ALL_CODEBASE: true ####set this to true if you want to test your entire code base even if there are not changes, or false if not
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
