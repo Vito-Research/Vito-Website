@@ -1,6 +1,6 @@
 [![VitoCI](https://github.com/Vito-Research/Vito-Website/actions/workflows/Linting.yml/badge.svg)](https://github.com/Vito-Research/Vito-Website/actions/workflows/Linting.yml)
 
-![VitoHome.png](https://res.craft.do/user/full/23a03a79-af5e-1af9-b4ff-27170389b6b1/doc/BAA595D7-E923-4FC2-A915-B766124813DF/AE29566B-6CCD-4212-BCF1-892B376A3192_2/ulfzKAiN1Is2Cwvoagt5SxprdhYxE8HpCgG5aK1eZqYz/VitoHome.png)
+![Screenshot 2022-09-18 at 12 56 13 PM](https://user-images.githubusercontent.com/67549402/190919075-6fa9b6ca-5142-4d8a-87e3-99ffcd2a58be.png)
 
 ## Contributing
 

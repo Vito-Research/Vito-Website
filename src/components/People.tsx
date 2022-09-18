@@ -82,7 +82,41 @@ function People() {
             </div>
 
           </div>
-
+          <div className="people-feature">
+            <div className="people-feature-cell">
+              <img
+                className="people-feature-img"
+                alt="Andreas's Profile Pic"
+                src="https://avatars.githubusercontent.com/u/48031522?v=4"
+              />
+              <h3 className="people-feature-header">Grant Randa</h3>
+              <caption className="people-feature-caption">
+              Works primarily on the Vito Android app, pursuing a B.S. in Computer Science at UNF.
+              </caption>
+            </div>
+            <div className="people-feature-cell">
+              <img
+                className="people-feature-img"
+                alt="Andreas's Profile Pic"
+                src="https://avatars.githubusercontent.com/u/71096053?v=4"
+              />
+              <h3 className="people-feature-header">Austin Leverett</h3>
+              <caption className="people-feature-caption">
+              B.S. in Information Technology and Platform Engineer. Assisting to create CI/CD pipelines and automation of projects
+              </caption>
+            </div>
+            <div className="people-feature-cell">
+              <img
+                className="people-feature-img"
+                alt="Andreas's Profile Pic"
+                src="https://avatars.githubusercontent.com/u/39766555?v=4"
+              />
+              <h3 className="people-feature-header">Senal Bulumulle</h3>
+              <caption className="people-feature-caption">
+              Founder, and creator of Smith-Pad and FOIL, drafting documentation for Vito 
+              </caption>
+            </div>
+            </div>
         </div>
         <Footer />
       </SectionContainer>
