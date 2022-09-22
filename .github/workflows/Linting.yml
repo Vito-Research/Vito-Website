@@ -2,7 +2,7 @@
 # Beginning of the YML file                                                                     #
 # documentation can be found here: https://yaml.org/spec/1.2.2/#chapter-1-introduction-to-yaml) #
 #################################################################################################
-name: Vito-Website #name of workflow as it will appear in Actions
+name: VitoCI #name of workflow as it will appear in Actions
 on:
   workflow_call:
   workflow_dispatch: #allows you use run the workflow manually in github actions
