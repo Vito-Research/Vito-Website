@@ -9,7 +9,8 @@ import Blog from "./Blog/Blog";
 import BlogIndex from "./Blog/BlogIndex";
 import BlogFeed from "./Blog/BlogFeed";
 import BlogPostPage from "./Blog/BlogPostPage";
-
+import JoinStudyLanding from "./Study/JoinStudySection";
+import Study from "./Study/Study";
 function App() {
   return (
     <BrowserRouter>
@@ -18,6 +19,8 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/coming-soon" element={<ComingSoon />} />
+        <Route path="/join" element={<JoinStudyLanding />} />
+        <Route path="/study" element={<Study />} />
         <Route path="/people" element={<People />} />
         <Route path="/blog" element={<Blog />}>
           <Route index element={<BlogFeed />} />
