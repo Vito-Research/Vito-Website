@@ -21,7 +21,7 @@ function JoinStudyLanding() {
       </button>
       </a>
 <h3> Or </h3>
-      <a className="footer-text" href="https://www.fitbit.com/oauth2/authorize?response_type=token&client_id=238Y7Z&redirect_uri=https://vitostudy.streamlitapp.com?&scope=heartrate%20sleep%20oxygen_saturation%20respiratory_rate%20temperature&expires_in=604800">
+      <a className="footer-text" href="https://www.fitbit.com/oauth2/authorize?response_type=code&client_id=238Y7Z&redirect_uri=https://vitostudy.streamlitapp.com?&scope=heartrate%20sleep%20oxygen_saturation%20respiratory_rate%20temperature&expires_in=604800">
           
           <button
       type="button"
